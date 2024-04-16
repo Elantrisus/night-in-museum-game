@@ -19,10 +19,16 @@ shape = SubResource("CapsuleShape3D_c3voj")
 material_override = SubResource("StandardMaterial3D_je4o5")
 mesh = SubResource("CapsuleMesh_i5t3o")
 
-[node name="SpotLight3D" type="SpotLight3D" parent="."]
-light_color = Color(1, 0.914833, 0.27, 1)
-light_energy = 15.707
-light_indirect_energy = 4.878
-light_volumetric_fog_energy = 6.657
-spot_range = 19.223
-spot_angle = 24.84
+[node name="SpotLight3D" type="SpotLight3D" parent="MeshInstance3D"]
+transform = Transform3D(0.999842, -0.0148411, 0.00980702, 0.0144302, 0.999066, 0.0407219, -0.0104022, -0.0405739, 0.999122, -0.393971, 0.362311, -0.261115)
+light_color = Color(1, 1, 0.25098, 1)
+light_energy = 14.137
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 3.398
+distance_fade_enabled = true
+distance_fade_begin = 10.0
+distance_fade_length = 20.0
+spot_range = 14.044
+spot_attenuation = 0.000455586
+spot_angle = 19.73
+spot_angle_attenuation = 4.0268e-05
