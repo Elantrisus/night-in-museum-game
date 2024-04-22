@@ -37,3 +37,7 @@ func _physics_process(delta):
 	var vl = velocity * $Rig.transform.basis
 	$AnimationTree.set("parameters/BlendSpace2D/blend_position",Vector2(vl.x,-vl.z)/ SPEED)
 	$CameraController.position = lerp($CameraController.position, position, smoothstep(0,0.5,0.05))
+
+
+func interact(arg):
+	print(arg)

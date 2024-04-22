@@ -1,4 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://b1k2n0mngv17g"]
+[gd_scene load_steps=9 format=3 uid="uid://b1k2n0mngv17g"]
+
+[ext_resource type="Script" path="res://scenes/rigid_box.gd" id="1_gb2xi"]
+[ext_resource type="Script" path="res://scenes/MeshInstance3D.gd" id="2_vqgnb"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ubd5g"]
 friction = 0.45
@@ -8,12 +11,42 @@ bounce = 0.46
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_yxru4"]
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_2irgp"]
+
+[sub_resource type="SystemFont" id="SystemFont_gek31"]
+subpixel_positioning = 0
+
+[sub_resource type="TextMesh" id="TextMesh_uwlab"]
+text = "Pick up"
+font = SubResource("SystemFont_gek31")
+font_size = 56
+
 [node name="rigid_box" type="RigidBody3D"]
 physics_material_override = SubResource("PhysicsMaterial_ubd5g")
 can_sleep = false
+script = ExtResource("1_gb2xi")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("SphereMesh_5q5iq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_yxru4")
+
+[node name="interact_area" type="Area3D" parent="."]
+top_level = true
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="interact_area"]
+transform = Transform3D(3, 0, 0, 0, 0.5, 0, 0, 0, 3, 0, 0, 0)
+shape = SubResource("CylinderShape3D_2irgp")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="interact_area"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+mesh = SubResource("TextMesh_uwlab")
+script = ExtResource("2_vqgnb")
+
+[connection signal="body_entered" from="interact_area" to="." method="_on_interact_area_body_entered"]
+[connection signal="body_entered" from="interact_area" to="interact_area/MeshInstance3D" method="_on_interact_area_body_entered"]
+[connection signal="body_exited" from="interact_area" to="." method="_on_interact_area_body_exited"]
+[connection signal="body_exited" from="interact_area" to="interact_area/MeshInstance3D" method="_on_interact_area_body_exited"]
