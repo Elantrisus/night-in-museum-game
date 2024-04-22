@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cfydsgkur4y6i"]
+[gd_scene load_steps=7 format=3 uid="uid://cfydsgkur4y6i"]
 
 [ext_resource type="Script" path="res://scenes/enemy.gd" id="1_buv08"]
+[ext_resource type="PackedScene" uid="uid://by208gd824hdf" path="res://cone.tscn" id="2_o3wlg"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_c3voj"]
 
@@ -8,6 +9,9 @@
 albedo_color = Color(0.75, 0.24, 0.2485, 1)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_i5t3o"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_54x63"]
+points = PackedVector3Array(-0.000195742, 1, -0.000195742, 0.194988, -1, -0.980814, -0.000195742, -1, -1, -0.195184, -1, -0.980814, -0.382733, -1, -0.924041, -0.555599, -1, -0.831637, -0.707126, -1, -0.707126, -0.831637, -1, -0.555599, -0.924041, -1, -0.382733, -0.980814, -1, -0.195184, -1, -1, -0.000195742, -0.980814, -1, 0.194988, -0.924041, -1, 0.382537, -0.831637, -1, 0.555403, -0.707126, -1, 0.70693, -0.555599, -1, 0.831441, -0.382733, -1, 0.923845, -0.195184, -1, 0.980619, -0.000195742, -1, 1, 0.194988, -1, 0.980619, 0.382537, -1, 0.923845, 0.555403, -1, 0.831441, 0.70693, -1, 0.70693, 0.831441, -1, 0.555403, 0.923845, -1, 0.382537, 0.980619, -1, 0.194988, 1, -1, -0.000195742, 0.980619, -1, -0.195184, 0.923845, -1, -0.382733, 0.831441, -1, -0.555599, 0.70693, -1, -0.707126, 0.555403, -1, -0.831637, 0.382537, -1, -0.924041)
 
 [node name="enemy" type="CharacterBody3D"]
 script = ExtResource("1_buv08")
@@ -20,15 +24,36 @@ material_override = SubResource("StandardMaterial3D_je4o5")
 mesh = SubResource("CapsuleMesh_i5t3o")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="MeshInstance3D"]
-transform = Transform3D(0.999842, -0.0148411, 0.00980702, 0.0144302, 0.999066, 0.0407219, -0.0104022, -0.0405739, 0.999122, -0.393971, 0.362311, -0.261115)
+transform = Transform3D(-0.209196, 0.977818, 0.0104633, -0.976996, -0.20945, 0.0401318, 0.0414331, -0.00182723, 0.99914, 2.08165e-12, 2.08165e-12, 0.56)
 light_color = Color(1, 1, 0.25098, 1)
-light_energy = 14.137
+light_energy = 14.625
 light_indirect_energy = 0.0
-light_volumetric_fog_energy = 3.398
+light_volumetric_fog_energy = 3.031
+light_specular = 5.2
 distance_fade_enabled = true
 distance_fade_begin = 10.0
 distance_fade_length = 20.0
 spot_range = 14.044
-spot_attenuation = 0.000455586
-spot_angle = 19.73
-spot_angle_attenuation = 4.0268e-05
+spot_attenuation = 0.0155209
+spot_angle = 23.86
+spot_angle_attenuation = 0.0824692
+
+[node name="VisionArea" type="Area3D" parent="."]
+
+[node name="Cone" parent="VisionArea" instance=ExtResource("2_o3wlg")]
+transform = Transform3D(5, -3.33212e-30, 1.45652e-37, 0, -2.18557e-07, -5, 3.33212e-30, 5, -2.18557e-07, 0.00122166, 0, -5.24725)
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VisionArea"]
+transform = Transform3D(5, -3.33212e-30, 1.45652e-37, 0, -2.18557e-07, -5, 3.33212e-30, 5, -2.18557e-07, 0.00122166, 0, -5.24725)
+shape = SubResource("ConvexPolygonShape3D_54x63")
+
+[node name="VisionTimer" type="Timer" parent="."]
+wait_time = 0.2
+autostart = true
+
+[node name="VisionRayCast" type="RayCast3D" parent="."]
+target_position = Vector3(2.08165e-12, 10, -100)
+debug_shape_custom_color = Color(1, 0, 0, 1)
+
+[connection signal="timeout" from="VisionTimer" to="." method="_on_vision_timer_timeout"]

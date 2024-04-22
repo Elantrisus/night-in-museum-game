@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 
-const SPEED = 2.0
+const SPEED = 0.0
 var dir = Vector2(0,1)
 var init_pos = Vector3(0,0,0)
 func _ready():
@@ -22,3 +22,31 @@ func _physics_process(delta):
 		#dir.x = - dir.x
 	#if abs(position.z - init_pos.z) > 5:
 		#dir.y = - dir.y
+
+
+func _on_vision_timer_timeout():
+	var overlaps = $VisionArea.get_overlapping_bodies()
+	if overlaps.size() > 0:
+		for overlap in overlaps:
+			if overlap.name == "Knight":
+				var playerPosition = overlap.global_transform.origin
+				$VisionRayCast.look_at(playerPosition, Vector3.UP)
+				$VisionRayCast.force_raycast_update()
+				
+				if $VisionRayCast.is_colliding():
+					var collider = $VisionRayCast.get_collider()
+					
+					print(collider.name)
+					
+					if collider.name == "Knight":
+						$VisionRayCast.debug_shape_custom_color = Color(174,0,0)
+						print("I see you")
+					else:
+						$VisionRayCast.debug_shape_custom_color = Color(0,255,0)
+						print("Where are you?")
+			else:
+				$VisionRayCast.debug_shape_custom_color = Color(0,255,0)
+				print("Where are you?")
+				
+	
+	
