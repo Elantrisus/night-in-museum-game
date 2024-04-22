@@ -1,0 +1,80 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5d6wjsn6y20"]
+
+[ext_resource type="Texture2D" uid="uid://ekk5s2j33s8t" path="res://assets/graphics/close-up-fragment-grunge-weathered-concrete-wall-building.jpg" id="1_bmdfs"]
+[ext_resource type="Script" path="res://scenes/menu/main_menu.gd" id="1_lylp1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_537jd"]
+font_size = 42
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lylp1")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_bmdfs")
+expand_mode = 5
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="title" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Night In Museum"
+label_settings = SubResource("LabelSettings_537jd")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="start_button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Start Game"
+
+[node name="load_button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Load Game"
+
+[node name="settings_button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Settings"
+
+[node name="exit_button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Settings"
+
+[connection signal="button_up" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/start_button" to="." method="_on_start_button_button_up"]
+[connection signal="button_down" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/load_button" to="." method="_on_load_button_button_down"]
+[connection signal="button_up" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/settings_button" to="." method="_on_settings_button_button_up"]
+[connection signal="button_up" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/exit_button" to="." method="_on_exit_button_button_up"]
