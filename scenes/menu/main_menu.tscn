@@ -72,7 +72,7 @@ text = "Settings"
 
 [node name="exit_button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-text = "Settings"
+text = "Exit"
 
 [connection signal="button_up" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/start_button" to="." method="_on_start_button_button_up"]
 [connection signal="button_down" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/load_button" to="." method="_on_load_button_button_down"]
