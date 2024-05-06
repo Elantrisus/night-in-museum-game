@@ -41,3 +41,9 @@ func _physics_process(delta):
 
 func interact(arg):
 	print(arg)
+	
+func entered_view(arg):
+	print(arg)
+
+func left_view(arg):
+	print(arg)

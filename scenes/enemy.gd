@@ -4,25 +4,18 @@ extends CharacterBody3D
 const SPEED = 0.0
 var dir = Vector2(0,1)
 var init_pos = Vector3(0,0,0)
+var player_body = null
 func _ready():
 	init_pos = position
 
 func _physics_process(delta):
 	var direction = (transform.basis * Vector3(dir.x, 0, dir.y)).normalized()
-	#if direction:
-		#velocity.x = direction.x * SPEED
-		#velocity.z = direction.z * SPEED
-	#else:
-		#velocity.x = move_toward(velocity.x, 0, SPEED)
-		#velocity.z = move_toward(velocity.z, 0, SPEED)
-	#move_and_slide()
-	#print(position)
-	#print(init_pos)
-	#if abs(position.x - init_pos.z) > 5:
-		#dir.x = - dir.x
-	#if abs(position.z - init_pos.z) > 5:
-		#dir.y = - dir.y
 
+func lost_sight():
+	$VisionRayCast.debug_shape_custom_color = Color(0,255,0)
+	if player_body != null:
+		player_body.left_view("I ran away")
+		player_body = null
 
 func _on_vision_timer_timeout():
 	var overlaps = $VisionArea.get_overlapping_bodies()
@@ -38,15 +31,13 @@ func _on_vision_timer_timeout():
 					
 					print(collider.name)
 					
-					if collider.name == "Knight":
+					if collider.has_method("entered_view") and collider.has_method("left_view"):
 						$VisionRayCast.debug_shape_custom_color = Color(174,0,0)
-						print("I see you")
+						collider.entered_view("I am seen")
+						player_body = collider
 					else:
-						$VisionRayCast.debug_shape_custom_color = Color(0,255,0)
-						print("Where are you?")
+						lost_sight()
 			else:
-				$VisionRayCast.debug_shape_custom_color = Color(0,255,0)
-				print("Where are you?")
+				lost_sight()
 				
-	
 	

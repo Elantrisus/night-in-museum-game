@@ -43,6 +43,7 @@ shape = SubResource("CylinderShape3D_2irgp")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="interact_area"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+cast_shadow = 0
 mesh = SubResource("TextMesh_uwlab")
 script = ExtResource("2_vqgnb")
 
