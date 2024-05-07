@@ -1,7 +1,11 @@
-extends CharacterBody3D
 
 
-const SPEED = 5.0
+class_name Player extends CharacterBody3D
+
+signal entered_detection_zone(body)
+signal left_detection_zone(body)
+
+const SPEED = 7.0
 const JUMP_VELOCITY = 4.5
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -43,7 +47,9 @@ func interact(arg):
 	print(arg)
 	
 func entered_view(arg):
+	entered_detection_zone.emit(arg)
 	print(arg)
 
 func left_view(arg):
+	left_detection_zone.emit(arg)
 	print(arg)
