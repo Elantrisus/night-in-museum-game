@@ -4,6 +4,7 @@ class_name Player extends CharacterBody3D
 
 signal entered_detection_zone(body)
 signal left_detection_zone(body)
+signal item_collected(item)
 
 const SPEED = 7.0
 const JUMP_VELOCITY = 4.5
@@ -45,6 +46,7 @@ func _physics_process(delta):
 
 func interact(arg):
 	print(arg)
+	item_collected.emit(arg)
 	
 func entered_view(arg):
 	entered_detection_zone.emit(arg)

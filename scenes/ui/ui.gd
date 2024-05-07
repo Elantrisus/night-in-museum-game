@@ -15,4 +15,18 @@ func _process(delta):
 
 
 func _update_timer(value: float):
-	detection_timer.text = str("%.2f" % value)
+	detection_timer.text = time_convert(int(value))
+
+func time_convert(time_in_sec):
+	var seconds = time_in_sec%60
+	var minutes = (time_in_sec/60)%60
+	
+	#returns a string with the format "HH:MM:SS"
+	return "%02d:%02d" % [minutes, seconds]
+
+func add_object(obj):
+	var new_texture = TextureRect.new()
+	var texture = load(obj) # Load the texture from the provided path
+	new_texture.set_texture(texture) # Set the texture for the TextureRect
+	
+	$MarginContainer/VBoxContainer/HBoxContainer.add_child(new_texture)
