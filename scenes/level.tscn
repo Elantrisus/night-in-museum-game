@@ -226,6 +226,177 @@ shape = SubResource("BoxShape3D_28sx2")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20"]
 mesh = SubResource("BoxMesh_bs18r")
 
+[node name="wall20" type="StaticBody3D" parent="walls/wall20"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -20.1441, -0.0144401, -49.528)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall20"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall20"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall21" type="StaticBody3D" parent="walls/wall20"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.1441, -0.0144401, -49.5279)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall21"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall21"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall22" type="StaticBody3D" parent="walls/wall20"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.144098, -0.0144401, -49.5279)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall22"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall20" type="StaticBody3D" parent="walls/wall20/wall22"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -30.1441, -0.0144401, -36.528)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall22/wall20"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall20"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall21" type="StaticBody3D" parent="walls/wall20/wall22"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -20.1441, -0.0144401, -36.5279)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall22/wall21"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall21"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall22" type="StaticBody3D" parent="walls/wall20/wall22"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.1441, -0.0144401, -36.5279)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall22/wall22"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall20" type="StaticBody3D" parent="walls/wall20/wall22/wall22"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 39.8559, -0.0144401, -62.0054)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall22/wall22/wall20"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall20"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall21" type="StaticBody3D" parent="walls/wall20/wall22/wall22"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 39.8559, -0.0144401, -72.0055)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall22/wall22/wall21"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall21"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall22" type="StaticBody3D" parent="walls/wall20/wall22/wall22"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 39.8559, -0.0144401, -82.0054)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall22/wall22/wall22"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall20" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 40.0182, -0.0144401, 8.99455)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall22/wall22/wall22/wall20"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall20"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall21" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 40.0182, -0.0144401, -1.00546)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall22/wall22/wall22/wall21"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall21"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall22" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 40.0182, -0.0144401, -11.0054)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall22/wall22/wall22/wall22"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall22"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall20" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22/wall22"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5.0182, -0.0144401, -5.00547)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall20"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall20"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall20" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall20"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -14.9818, -0.0144401, -76.0055)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall20/wall20"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall20/wall20"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall20" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall20/wall20"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5.01819, -0.0144401, 4.99453)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall20/wall20/wall20"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall20/wall20/wall20"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall20" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall20/wall20/wall20"]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 10.0182, -0.0144401, -0.00546265)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall20/wall20/wall20/wall20"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall20/wall20/wall20/wall20"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall21" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22/wall22"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5.01822, -0.0144401, -15.0055)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall21"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall21"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall23" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22/wall22"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5.01822, -0.0144401, -15.0055)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall23"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall23"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall22" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22/wall22"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5.01823, -0.0144401, -25.0055)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall22"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall22"]
+mesh = SubResource("BoxMesh_bs18r")
+
 [node name="wall21" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 49.8559, 2.38556, 34.4721)
 
@@ -685,6 +856,96 @@ shape = SubResource("BoxShape3D_28sx2")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall15"]
 mesh = SubResource("BoxMesh_bs18r")
 
+[node name="wall68" type="StaticBody3D" parent="walls"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 41.8559, 2.38556, -10.5279)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall68"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall68"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall69" type="StaticBody3D" parent="walls"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 44.8559, 2.38556, -31.5279)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall69"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall69"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall71" type="StaticBody3D" parent="walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 32.8559, 2.38556, -44.5279)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall71"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall71"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall72" type="StaticBody3D" parent="walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.8559, 2.38556, -26.5279)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall72"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall72"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall73" type="StaticBody3D" parent="walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.8559, 2.38556, -16.5279)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall73"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall73"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall74" type="StaticBody3D" parent="walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.8559, 2.38556, -6.5279)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall74"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall74"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall75" type="StaticBody3D" parent="walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.8559, 2.38556, 24.4721)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall75"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall75"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall76" type="StaticBody3D" parent="walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -10.1441, 2.38556, 44.4721)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall76"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall76"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall77" type="StaticBody3D" parent="walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -10.1441, 2.38556, 34.4721)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall77"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall77"]
+mesh = SubResource("BoxMesh_bs18r")
+
+[node name="wall70" type="StaticBody3D" parent="walls"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 34.8559, 2.38556, -31.5279)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="walls/wall70"]
+shape = SubResource("BoxShape3D_28sx2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall70"]
+mesh = SubResource("BoxMesh_bs18r")
+
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
 transform = Transform3D(0.962139, -0.264674, 0.0650896, -0.27018, -0.894649, 0.355819, -0.0359436, -0.359933, -0.932286, -2.29928, 4.37489, -10.0199)
 visible = false
@@ -737,61 +998,61 @@ debug_shape_custom_color = Color(0, 1, 0, 1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17)
 
 [node name="Skeleton3D" parent="Knight/Rig" index="0"]
-bones/0/position = Vector3(0, 0.000278398, 0)
-bones/1/position = Vector3(0, 0.384327, 0)
-bones/1/rotation = Quaternion(0.000812932, 0.0428042, -3.48263e-05, 0.999083)
-bones/2/rotation = Quaternion(0.000926396, -0.000869797, 6.84544e-05, 0.999999)
-bones/3/rotation = Quaternion(0.000345473, -1.43052e-05, -7.35937e-05, 1)
-bones/4/position = Vector3(0.211817, 0.133959, -0.000350874)
-bones/4/rotation = Quaternion(-0.556782, -0.0638294, -0.654053, 0.508069)
-bones/5/rotation = Quaternion(2.17263e-08, -6.1169e-08, -0.474156, 0.880441)
-bones/7/rotation = Quaternion(-0.314875, -0.328124, 0.131043, 0.880918)
-bones/8/rotation = Quaternion(0.00114516, 0.00204082, -0.699969, 0.714169)
-bones/14/position = Vector3(-0.211987, 0.134044, -0.000396833)
-bones/14/rotation = Quaternion(-0.615043, 0.0844599, 0.62847, 0.46863)
-bones/15/rotation = Quaternion(-9.08122e-09, 5.68039e-08, 0.498661, 0.866797)
-bones/17/rotation = Quaternion(-0.312817, 0.301885, -0.213053, 0.874997)
-bones/18/rotation = Quaternion(0.00319856, 0.00386814, 0.702049, 0.71211)
-bones/21/rotation = Quaternion(-0.00106616, -0.0301631, -8.95962e-05, 0.999545)
-bones/24/position = Vector3(0.170945, 0.113587, -0.000793277)
-bones/24/rotation = Quaternion(0.992721, 0.0824448, 0.075332, 0.0450977)
-bones/25/rotation = Quaternion(0.28804, 6.50268e-08, -2.02028e-07, 0.957618)
-bones/26/rotation = Quaternion(-0.561354, -0.204646, 0.0576183, 0.799801)
-bones/27/rotation = Quaternion(-3.00062e-08, 0.920095, -0.391695, 6.93838e-08)
-bones/28/position = Vector3(-0.170945, 0.113587, 0.000793305)
-bones/28/rotation = Quaternion(0.994982, -0.030862, 0.0304244, 0.0901868)
-bones/29/rotation = Quaternion(0.344404, -6.23123e-08, 2.38836e-07, 0.938822)
-bones/30/rotation = Quaternion(-0.596363, 0.113028, -0.0142076, 0.794591)
+bones/0/position = Vector3(0, 0.000379483, 0)
+bones/1/position = Vector3(0, 0.387144, 0)
+bones/1/rotation = Quaternion(0.000792619, 0.0428042, -3.3956e-05, 0.999083)
+bones/2/rotation = Quaternion(0.000924982, -0.00103021, 8.10794e-05, 0.999999)
+bones/3/rotation = Quaternion(0.000345469, -1.69678e-05, -8.72916e-05, 1)
+bones/4/position = Vector3(0.211801, 0.133951, -0.000346597)
+bones/4/rotation = Quaternion(-0.558487, -0.063204, -0.650887, 0.510336)
+bones/5/rotation = Quaternion(1.7323e-08, -6.27361e-08, -0.47856, 0.878055)
+bones/7/rotation = Quaternion(-0.316094, -0.327238, 0.133666, 0.880416)
+bones/8/rotation = Quaternion(0.000854471, 0.00175114, -0.701048, 0.713112)
+bones/14/position = Vector3(-0.212003, 0.134052, -0.000401112)
+bones/14/rotation = Quaternion(-0.616417, 0.0838813, 0.625851, 0.47043)
+bones/15/rotation = Quaternion(1.22369e-08, 4.91041e-08, 0.503055, 0.864254)
+bones/17/rotation = Quaternion(-0.313871, 0.301149, -0.215907, 0.874173)
+bones/18/rotation = Quaternion(0.0021878, 0.00267192, 0.703111, 0.711071)
+bones/21/rotation = Quaternion(-0.00106503, -0.030071, -9.51957e-05, 0.999547)
+bones/24/position = Vector3(0.170945, 0.113587, -0.00081496)
+bones/24/rotation = Quaternion(0.99319, 0.0825458, 0.0745957, 0.0345629)
+bones/25/rotation = Quaternion(0.260793, 6.45965e-08, -1.81867e-07, 0.965395)
+bones/26/rotation = Quaternion(-0.54699, -0.205688, 0.0533207, 0.809723)
+bones/27/rotation = Quaternion(-3.01043e-08, 0.920304, -0.391205, 6.93849e-08)
+bones/28/position = Vector3(-0.170945, 0.113587, 0.000814988)
+bones/28/rotation = Quaternion(0.995824, -0.030323, 0.0306896, 0.0804585)
+bones/29/rotation = Quaternion(0.319592, -6.29337e-08, 2.22507e-07, 0.947555)
+bones/30/rotation = Quaternion(-0.58387, 0.113237, -0.0123958, 0.803816)
 bones/31/rotation = Quaternion(3.04791e-08, 0.920355, -0.391084, -6.94849e-08)
-bones/32/position = Vector3(0.170945, 0.292573, 0.576075)
+bones/32/position = Vector3(0.170945, 0.292371, 0.575873)
 bones/32/rotation = Quaternion(0.707107, -2.29302e-07, -4.60552e-08, 0.707107)
-bones/33/position = Vector3(0.201926, 0.0268323, 0.199814)
-bones/33/rotation = Quaternion(-0.70154, -7.10504e-08, -6.99974e-08, 0.71263)
+bones/33/position = Vector3(0.201926, 0.0269067, 0.199614)
+bones/33/rotation = Quaternion(-0.701375, -7.10642e-08, -6.99842e-08, 0.712792)
 bones/34/rotation = Quaternion(9.57951e-09, 1.7651e-09, 0.985952, -0.16703)
 bones/35/rotation = Quaternion(-1.04035e-07, 0.391084, 0.920355, -2.9526e-08)
 bones/37/rotation = Quaternion(1, -3.09407e-15, 1.94707e-07, -6.86069e-22)
-bones/39/position = Vector3(-0.170945, 0.292573, 0.576075)
+bones/39/position = Vector3(-0.170945, 0.292371, 0.575873)
 bones/39/rotation = Quaternion(0.707107, -3.82385e-08, 1.45009e-07, 0.707107)
-bones/40/position = Vector3(-0.170945, 0.0284166, 0.248635)
-bones/40/rotation = Quaternion(-0.708996, -7.04059e-08, -7.06723e-08, 0.705212)
+bones/40/position = Vector3(-0.170945, 0.0286373, 0.248679)
+bones/40/rotation = Quaternion(-0.709615, -7.03356e-08, -7.07385e-08, 0.70459)
 bones/41/rotation = Quaternion(-5.78822e-09, 6.38578e-10, 0.994894, 0.100925)
 bones/42/rotation = Quaternion(-1.04035e-07, 0.391084, 0.920355, -2.95261e-08)
 bones/44/rotation = Quaternion(1, 4.44086e-16, 1.94707e-07, 6.86069e-22)
 bones/46/position = Vector3(0.453507, 1.10512, -0.589679)
-bones/47/position = Vector3(0.520778, 0.772363, -0.0560463)
-bones/47/rotation = Quaternion(0.796381, 0.00394622, 0.604782, 0.000639423)
+bones/47/position = Vector3(0.520778, 0.776995, -0.05616)
+bones/47/rotation = Quaternion(0.796283, 0.00382861, 0.604912, 0.000603943)
 bones/48/position = Vector3(-0.453507, 1.10512, -0.589679)
-bones/49/position = Vector3(-0.510863, 0.772362, 0.0603658)
-bones/49/rotation = Quaternion(-0.760381, 0.00364224, 0.649467, -0.000602069)
+bones/49/position = Vector3(-0.510863, 0.776995, 0.0602522)
+bones/49/rotation = Quaternion(-0.760276, 0.00352682, 0.64959, -0.000559945)
 
 [node name="Knight_Helmet" parent="Knight/Rig/Skeleton3D" index="0"]
-transform = Transform3D(0.999723, 0.000428674, 0.0235294, -0.000381109, 0.999998, -0.00202597, -0.0235303, 0.00201644, 0.999721, 0.000174, 1.19483, 0.00268122)
+transform = Transform3D(0.999726, 0.000438384, 0.0233875, -0.00039208, 0.999998, -0.0019844, -0.0233884, 0.00197469, 0.999725, 0.000161581, 1.19775, 0.00264739)
 
 [node name="Knight_Helmet" parent="Knight/Rig/Skeleton3D/Knight_Helmet" index="0"]
 transform = Transform3D(0.999999, -8.56263e-06, -0.00139428, 8.5545e-06, 1, -5.85308e-06, 0.00139429, 5.8412e-06, 0.999999, -2.94745e-05, -0.00640965, 2.86102e-05)
 
 [node name="Knight_Cape" parent="Knight/Rig/Skeleton3D" index="1"]
-transform = Transform3D(0.996485, 0.000364188, 0.0837678, -1.48249e-05, 0.999991, -0.0041712, -0.0837686, 0.0041553, 0.996477, 0.00017516, 1.19483, 0.00262658)
+transform = Transform3D(0.996513, 0.000362094, 0.0834428, -1.7722e-05, 0.999991, -0.00412775, -0.0834436, 0.00411187, 0.996504, 0.000163043, 1.19775, 0.0025928)
 
 [node name="SpotLight3D" parent="Knight/Rig/Skeleton3D" index="3"]
 transform = Transform3D(0.999887, -0.0150267, 1.74732e-07, -0.0150241, -0.99971, 0.0188485, -0.000283056, -0.0188464, -0.999822, -0.548723, 0.415589, 0.740334)
