@@ -1,7 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://b1k2n0mngv17g"]
+[gd_scene load_steps=13 format=3 uid="uid://b1k2n0mngv17g"]
 
 [ext_resource type="Script" path="res://scenes/rigid_box.gd" id="1_gb2xi"]
 [ext_resource type="Script" path="res://scenes/MeshInstance3D.gd" id="2_vqgnb"]
+[ext_resource type="ArrayMesh" uid="uid://bjtcbjf83a0uq" path="res://assets/vase/vase.obj" id="3_lx3vq"]
+[ext_resource type="Texture2D" uid="uid://wti18ly5otk2" path="res://assets/vase/vase_d.png" id="4_nrlxk"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ubd5g"]
 friction = 0.45
@@ -9,9 +11,14 @@ bounce = 0.46
 
 [sub_resource type="SphereMesh" id="SphereMesh_5q5iq"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_yxru4"]
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_1uioq"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_2irgp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lprfi"]
+emission_enabled = true
+emission = Color(0.92073, 0.96591, 0.999787, 1)
+emission_energy_multiplier = 1.99
 
 [sub_resource type="SystemFont" id="SystemFont_gek31"]
 subpixel_positioning = 0
@@ -21,16 +28,21 @@ text = "Pick up"
 font = SubResource("SystemFont_gek31")
 font_size = 56
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3yapf"]
+albedo_texture = ExtResource("4_nrlxk")
+
 [node name="rigid_box" type="RigidBody3D"]
 physics_material_override = SubResource("PhysicsMaterial_ubd5g")
 can_sleep = false
 script = ExtResource("1_gb2xi")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
 mesh = SubResource("SphereMesh_5q5iq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("SphereShape3D_yxru4")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CylinderShape3D_1uioq")
 
 [node name="interact_area" type="Area3D" parent="."]
 top_level = true
@@ -42,10 +54,16 @@ transform = Transform3D(3, 0, 0, 0, 0.5, 0, 0, 0, 3, 0, 0, 0)
 shape = SubResource("CylinderShape3D_2irgp")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="interact_area"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 2, 0)
+material_override = SubResource("StandardMaterial3D_lprfi")
 cast_shadow = 0
 mesh = SubResource("TextMesh_uwlab")
 script = ExtResource("2_vqgnb")
+
+[node name="Vase" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 0, 0, 0)
+mesh = ExtResource("3_lx3vq")
+surface_material_override/0 = SubResource("StandardMaterial3D_3yapf")
 
 [connection signal="body_entered" from="interact_area" to="." method="_on_interact_area_body_entered"]
 [connection signal="body_entered" from="interact_area" to="interact_area/MeshInstance3D" method="_on_interact_area_body_entered"]

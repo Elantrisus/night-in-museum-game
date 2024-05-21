@@ -44,6 +44,7 @@ func _process(delta):
 
 	# Check if game over condition is met
 	if timer_value >= game_over_threshold:
+		print("game over treshold reached")
 		detection_timeout.emit()
 
 
