@@ -5,16 +5,17 @@ const SPEED = 0.0
 var dir = Vector2(0,1)
 var init_pos = Vector3(0,0,0)
 var player_body = null
+signal game_over(body)
+@onready var detection = $Detection
+
 func _ready():
 	init_pos = position
-	
-signal game_over(body)
-	
-@onready var detection = $Detection
+	$Rogue_Hooded/AnimationPlayer.play("Walking_A")
 
 func _physics_process(delta):
 	var direction = (transform.basis * Vector3(dir.x, 0, dir.y)).normalized()
-
+	#$Rogue_Hooded/AnimationTree.set("parameters/BlendSpace2D/blend_position",Vector2(1,1))
+	
 func lost_sight():
 	$VisionRayCast.debug_shape_custom_color = Color(0,255,0)
 	if player_body != null:

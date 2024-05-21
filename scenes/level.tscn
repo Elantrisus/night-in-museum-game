@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dwb1uuxwnkhr2"]
+[gd_scene load_steps=21 format=3 uid="uid://dwb1uuxwnkhr2"]
 
 [ext_resource type="PackedScene" uid="uid://b1k2n0mngv17g" path="res://scenes/rigid_box.tscn" id="1_g1j0t"]
 [ext_resource type="Script" path="res://scenes/level.gd" id="1_kc3au"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cfydsgkur4y6i" path="res://scenes/enemy.tscn" id="3_ktybs"]
 [ext_resource type="PackedScene" uid="uid://blvrf2ko8lwu8" path="res://scenes/knight.tscn" id="4_8lpuc"]
 [ext_resource type="PackedScene" uid="uid://qvkjv5iekhk8" path="res://scenes/ui/ui.tscn" id="6_w68yh"]
+[ext_resource type="PackedScene" uid="uid://c3ewp162uq5fv" path="res://scenes/FlatPath3D.tscn" id="7_t8y01"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tax2a"]
 albedo_color = Color(0.337255, 0.32549, 0.329412, 1)
@@ -40,13 +41,45 @@ size = Vector3(10, 5, 0.5)
 [sub_resource type="BoxMesh" id="BoxMesh_bs18r"]
 size = Vector3(10, 5, 0.5)
 
-[sub_resource type="Curve3D" id="Curve3D_my6gp"]
-bake_interval = 131.81
+[sub_resource type="Curve3D" id="Curve3D_lf4re"]
+bake_interval = 181.76
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -24.997, 0, 20.7779, 0, 0, 0, 0, 0, 0, -34.4283, 0, 14.6333, 0, 0, 0, 0, 0, 0, -36.5718, 0, 6.05931, 0, 0, 0, 0, 0, 0, -37.1434, 0, -2.58609, 0, 0, 0, 0, 0, 0, -33.3566, 0, -5.94422, 0, 0, 0, 0, 0, 0, -27.2833, 0, -7.58756, 0, 0, 0, 0, 0, 0, -24.4968, 0, -7.65901, 0, 0, 0, 0, 0, 0, -19.9955, 0, -6.80161, 0, 0, 0, 0, 0, 0, -18.2093, 0, -5.01537, 0, 0, 0, 0, 0, 0, -16.7803, 0, -2.01449, 0, 0, 0, 0, 0, 0, -15.9943, 0, 1.20074, 0, 0, 0, 0, 0, 0, -15.5656, 0, 4.13017, 0, 0, 0, 0, 0, 0, -15.78, 0, 7.70265, 0, 0, 0, 0, 0, 0, -15.6371, 0, 10.775, 0, 0, 0, 0, 0, 0, -14.4939, 0, 13.4901, 0, 0, 0, 0, 0, 0, -12.2789, 0, 13.633, 0, 0, 0, 0, 0, 0, -9.84965, 0, 13.4901, 0, 0, 0, 0, 0, 0, -5.91993, 0, 13.1328, 0, 0, 0, 0, 0, 0, -5.91993, 0, 9.70324, 0, 0, 0, 0, 0, 0, -5.27688, 0, 6.84525, 0, 0, 0, 0, 0, 0, 5.01185, 0, 6.9167, 0, 0, 0, 0, 0, 0, 7.86984, 0, 9.63179, 0, 0, 0, 0, 0, 0, 7.72694, 0, 12.5612, 0, 0, 0, 0, 0, 0, 5.15475, 0, 14.2046, 0, 0, 0, 0, 0, 0, 0.367633, 0, 13.4901, 0, 0, 0, 0, 0, 0, -2.4189, 0, 14.4189, 0, 0, 0, 0, 0, 0, -6.06283, 0, 15.2049, 0, 0, 0, 0, 0, 0, -9.06371, 0, 16.1337, 0, 0, 0, 0, 0, 0, -13.7079, 0, 17.5627, 0, 0, 0, 0, 0, 0, -17.7806, 0, 19.992, 0, 0, 0, 0, 0, 0, -21.353, 0, 21.2781, 0, 0, 0, 0, 0, 0, -24.997, 0, 20.7779),
-"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -23.2262, 0, -35.9759, 0, 0, 0, 0, 0, 0, -6.62613, 0, -36.7739, 0, 0, 0, 0, 0, 0, 13.0067, 0, -36.4547, 0, 0, 0, 0, 0, 0, 43.3338, 0, -37.0932, 0, 0, 0, 0, 0, 0, 49.8781, 0, -32.9431, 0, 0, 0, 0, 0, 0, 53.23, 0, -27.5162, 0, 0, 0, 0, 0, 0, 58.8166, 0, -28.6335, 0, 0, 0, 0, 0, 0, 59.7743, 0, -35.9759, 0, 0, 0, 0, 0, 0, 67.5955, 0, -36.4547, 0, 0, 0, 0, 0, 0, 68.234, 0, -27.5162, 0, 0, 0, 0, 0, 0, 26.0952, 0, -25.2816, 0, 0, 0, 0, 0, 0, 18.7529, 0, -33.422, 0, 0, 0, 0, 0, 0, 6.46242, 0, -33.1028, 0, 0, 0, 0, 0, 0, 7.73935, 0, -22.5681, 0, 0, 0, 0, 0, 0, -9.65884, 0, -19.5354, 0, 0, 0, 0, 0, 0, -24.8224, 0, -21.4508, 0, 0, 0, 0, 0, 0, -25.9397, 0, -29.4316, 0, 0, 0, 0, 0, 0, -23.2262, 0, -35.9759),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 }
-point_count = 32
+point_count = 18
+
+[sub_resource type="Curve3D" id="Curve3D_oj58o"]
+bake_interval = 141.81
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 27.5318, 0, -6.12758, 0, 0, 0, 0, 0, 0, 19.551, 0, -9.95837, 0, 0, 0, 0, 0, 0, 20.0298, 0, -17.4603, 0, 0, 0, 0, 0, 0, 29.1279, 0, -19.3757, 0, 0, 0, 0, 0, 0, 36.7895, 0, -18.2584, 0, 0, 0, 0, 0, 0, 38.0665, 0, -7.08528, 0, 0, 0, 0, 0, 0, 37.7472, 0, 6.80135, 0, 0, 0, 0, 0, 0, 42.3761, 0, 12.5475, 0, 0, 0, 0, 0, 0, 46.2069, 0, 8.39752, 0, 0, 0, 0, 0, 0, 45.7281, 0, -6.60643, 0, 0, 0, 0, 0, 0, 48.1223, 0, -18.2584, 0, 0, 0, 0, 0, 0, 59.2955, 0, -19.0565, 0, 0, 0, 0, 0, 0, 66.957, 0, -15.3853, 0, 0, 0, 0, 0, 0, 67.1167, 0, -7.40451, 0, 0, 0, 0, 0, 0, 58.1782, 0, -4.85065, 0, 0, 0, 0, 0, 0, 52.9108, 0, -2.13717, 0, 0, 0, 0, 0, 0, 53.8685, 0, 8.71675, 0, 0, 0, 0, 0, 0, 54.1877, 0, 19.8899, 0, 0, 0, 0, 0, 0, 46.5262, 0, 26.1149, 0, 0, 0, 0, 0, 0, 16.8375, 0, 25.4765, 0, 0, 0, 0, 0, 0, -21.4705, 0, 25.6361, 0, 0, 0, 0, 0, 0, -23.2262, 0, 16.2187, 0, 0, 0, 0, 0, 0, -6.62613, 0, 15.8995, 0, 0, 0, 0, 0, 0, 11.2509, 0, 23.7207, 0, 0, 0, 0, 0, 0, 42.0569, 0, 24.3592, 0, 0, 0, 0, 0, 0, 46.8454, 0, 19.5707, 0, 0, 0, 0, 0, 0, 39.0242, 0, 13.186, 0, 0, 0, 0, 0, 0, 35.1934, 0, 4.24749, 0, 0, 0, 0, 0, 0, 35.0338, 0, -9.00067, 0, 0, 0, 0, 0, 0, 30.0857, 0, -11.0757, 0, 0, 0, 0, 0, 0, 27.5318, 0, -6.12758),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 31
+
+[sub_resource type="Curve3D" id="Curve3D_aqrp2"]
+bake_interval = 305.33
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -6.2211, 0, 38.2787, 0, 0, 0, 0, 0, 0, -18.3226, 0, 40.5129, 0, 0, 0, 0, 0, 0, -24.4664, 0, 37.1617, 0, 0, 0, 0, 0, 0, -22.977, 0, 31.5764, 0, 0, 0, 0, 0, 0, -13.6681, 0, 32.3211, 0, 0, 0, 0, 0, 0, -6.14772, 0, 31.8024, 0, 0, 0, 0, 0, 0, -2.86991, 0, 31.5764, 0, 0, 0, 0, 0, 0, 4.76333, 0, 31.5764, 0, 0, 0, 0, 0, 0, 14.4445, 0, 31.9487, 0, 0, 0, 0, 0, 0, 18.9128, 0, 34.5552, 0, 0, 0, 0, 0, 0, 18.7266, 0, 42.3746, 0, 0, 0, 0, 0, 0, 19.0989, 0, 51.3111, 0, 0, 0, 0, 0, 0, 15.003, 0, 56.5241, 0, 0, 0, 0, 0, 0, 13.886, 0, 47.7738, 0, 0, 0, 0, 0, 0, 14.2584, 0, 37.3479, 0, 0, 0, 0, 0, 0, 10.5348, 0, 35.8584, 0, 0, 0, 0, 0, 0, 8.11451, 0, 36.7893, 0, 0, 0, 0, 0, 0, 7.74216, 0, 42.747, 0, 0, 0, 0, 0, 0, 7.55598, 0, 49.077, 0, 0, 0, 0, 0, 0, 7.55598, 0, 53.1729, 0, 0, 0, 0, 0, 0, 4.01863, 0, 55.407, 0, 0, 0, 0, 0, 0, 0.667446, 0, 51.3111, 0, 0, 0, 0, 0, 0, -1.19432, 0, 47.5876, 0, 0, 0, 0, 0, 0, -7.15197, 0, 47.5876, 0, 0, 0, 0, 0, 0, -8.26903, 0, 54.4761, 0, 0, 0, 0, 0, 0, -14.7852, 0, 56.3379, 0, 0, 0, 0, 0, 0, -22.977, 0, 54.2899, 0, 0, 0, 0, 0, 0, -24.8388, 0, 48.1461, 0, 0, 0, 0, 0, 0, -22.0461, 0, 45.5396, 0, 0, 0, 0, 0, 0, -16.0885, 0, 45.5396, 0, 0, 0, 0, 0, 0, -10.5032, 0, 47.029, 0, 0, 0, 0, 0, 0, 2.15686, 0, 47.4014, 0, 0, 0, 0, 0, 0, 4.57715, 0, 42.5608, 0, 0, 0, 0, 0, 0, 3.64627, 0, 38.2787, 0, 0, 0, 0, 0, 0, -3, 0, 33, 0, 0, 0, 0, 0, 0, -6.2211, 0, 38.2787),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 36
+
+[sub_resource type="Curve3D" id="Curve3D_3q8rx"]
+bake_interval = 219.62
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 24.6842, 0, 31.9487, 0, 0, 0, 0, 0, 0, 31.2004, 0, 31.204, 0, 0, 0, 0, 0, 0, 36.041, 0, 31.204, 0, 0, 0, 0, 0, 0, 37.5304, 0, 34.1829, 0, 0, 0, 0, 0, 0, 38.8337, 0, 40.3267, 0, 0, 0, 0, 0, 0, 44.6051, 0, 41.0714, 0, 0, 0, 0, 0, 0, 46.6531, 0, 37.1617, 0, 0, 0, 0, 0, 0, 48.1425, 0, 32.6934, 0, 0, 0, 0, 0, 0, 56.7066, 0, 31.7626, 0, 0, 0, 0, 0, 0, 63.5952, 0, 32.5073, 0, 0, 0, 0, 0, 0, 67.691, 0, 36.2308, 0, 0, 0, 0, 0, 0, 68.4357, 0, 41.2576, 0, 0, 0, 0, 0, 0, 68.2496, 0, 47.4014, 0, 0, 0, 0, 0, 0, 67.5049, 0, 52.4282, 0, 0, 0, 0, 0, 0, 65.2707, 0, 55.2208, 0, 0, 0, 0, 0, 0, 52.9831, 0, 56.3379, 0, 0, 0, 0, 0, 0, 41.6263, 0, 55.0346, 0, 0, 0, 0, 0, 0, 41.8125, 0, 51.6835, 0, 0, 0, 0, 0, 0, 45.9084, 0, 50.7526, 0, 0, 0, 0, 0, 0, 52.0522, 0, 50.7526, 0, 0, 0, 0, 0, 0, 59.1269, 0, 51.8696, 0, 0, 0, 0, 0, 0, 61.1749, 0, 50.194, 0, 0, 0, 0, 0, 0, 60.9887, 0, 45.1673, 0, 0, 0, 0, 0, 0, 55.9619, 0, 43.4917, 0, 0, 0, 0, 0, 0, 51.866, 0, 44.0502, 0, 0, 0, 0, 0, 0, 45.536, 0, 44.4226, 0, 0, 0, 0, 0, 0, 37.1581, 0, 45.7258, 0, 0, 0, 0, 0, 0, 33.4345, 0, 49.4493, 0, 0, 0, 0, 0, 0, 32.5037, 0, 54.4761, 0, 0, 0, 0, 0, 0, 28.4078, 0, 56.3379, 0, 0, 0, 0, 0, 0, 25.4289, 0, 52.6143, 0, 0, 0, 0, 0, 0, 24.4981, 0, 47.4014, 0, 0, 0, 0, 0, 0, 24.4981, 0, 41.6299, 0, 0, 0, 0, 0, 0, 24.1257, 0, 37.534, 0, 0, 0, 0, 0, 0, 24.6842, 0, 31.9487),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 35
+
+[sub_resource type="Curve3D" id="Curve3D_4kw5v"]
+bake_interval = 193.4
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -24.4664, 0, -11.6166, 0, 0, 0, 0, 0, 0, -17.3917, 0, -12.7337, 0, 0, 0, 0, 0, 0, -8.64139, 0, -13.6645, 0, 0, 0, 0, 0, 0, -1.00814, 0, -13.6645, 0, 0, 0, 0, 0, 0, 5.69422, 0, -16.4572, 0, 0, 0, 0, 0, 0, 8.48687, 0, -19.8084, 0, 0, 0, 0, 0, 0, 12.9551, 0, -19.8084, 0, 0, 0, 0, 0, 0, 14.6307, 0, -14.4092, 0, 0, 0, 0, 0, 0, 13.5136, 0, -6.77601, 0, 0, 0, 0, 0, 0, 10.5348, 0, -5.10042, 0, 0, 0, 0, 0, 0, 8.30069, 0, -0.632177, 0, 0, 0, 0, 0, 0, 9.60393, 0, 4.02224, 0, 0, 0, 0, 0, 0, 9.75026, 0, 6.36357, 0, 0, 0, 0, 0, 0, 9.97628, 0, 9.97989, 0, 0, 0, 0, 0, 0, 13.886, 0, 12.7725, 0, 0, 0, 0, 0, 0, 23.5672, 0, 11.2831, 0, 0, 0, 0, 0, 0, 26.1736, 0, 6.62871, 0, 0, 0, 0, 0, 0, 23.5672, 0, 3.27753, 0, 0, 0, 0, 0, 0, 25.0566, 0, 0.298705, 0, 0, 0, 0, 0, 0, 27.1045, 0, 0.671059, 0, 0, 0, 0, 0, 0, 29.711, 0, 3.46371, 0, 0, 0, 0, 0, 0, 30.0834, 0, 8.67666, 0, 0, 0, 0, 0, 0, 29.3387, 0, 12.9587, 0, 0, 0, 0, 0, 0, 28.4078, 0, 17.7993, 0, 0, 0, 0, 0, 0, 24.8704, 0, 20.592, 0, 0, 0, 0, 0, 0, 19.4713, 0, 20.592, 0, 0, 0, 0, 0, 0, 14.8169, 0, 20.7781, 0, 0, 0, 0, 0, 0, 10.721, 0, 19.1025, 0, 0, 0, 0, 0, 0, 4.39098, 0, 17.427, 0, 0, 0, 0, 0, 0, -3.98697, 0, 13.3311, 0, 0, 0, 0, 0, 0, -15.9023, 0, 11.6555, 0, 0, 0, 0, 0, 0, -23.9079, 0, 9.60754, 0, 0, 0, 0, 0, 0, -24.6526, 0, 1.97429, 0, 0, 0, 0, 0, 0, -13.482, 0, -2.8663, 0, 0, 0, 0, 0, 0, -5.29021, 0, 4.02224, 0, 0, 0, 0, 0, 0, 1.59832, 0, 10.9108, 0, 0, 0, 0, 0, 0, 5.32187, 0, 10.5384, 0, 0, 0, 0, 0, 0, 4.01863, 0, -2.12159, 0, 0, 0, 0, 0, 0, 0.481274, 0, -5.84512, 0, 0, 0, 0, 0, 0, -10.5032, 0, -6.77601, 0, 0, 0, 0, 0, 0, -19.4396, 0, -3.79718, 0, 0, 0, 0, 0, 0, -24.4664, 0, -4.72806, 0, 0, 0, 0, 0, 0, -24.4664, 0, -11.6166),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 43
 
 [node name="level" type="Node3D" node_paths=PackedStringArray("player", "ui")]
 script = ExtResource("1_kc3au")
@@ -63,6 +96,7 @@ shadow_enabled = true
 shadow_blur = 0.0
 
 [node name="floor" type="StaticBody3D" parent="."]
+visible = false
 metadata/_edit_group_ = true
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="floor"]
@@ -957,102 +991,51 @@ shadow_enabled = true
 spot_range = 10.65
 spot_angle = 41.36
 
-[node name="Path3D" type="Path3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.449, 1, -3.988)
-curve = SubResource("Curve3D_my6gp")
-
-[node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(0.545873, 0, 0.837856, 0, 1, 0, -0.837856, 0, 0.545873, -24.997, 0, 20.7779)
-script = ExtResource("2_bx5mx")
-
-[node name="enemy" parent="Path3D/PathFollow3D" instance=ExtResource("3_ktybs")]
-transform = Transform3D(1, 0, -2.23403e-08, 0, 1, 0, 1.0607e-07, 0, 1, 0, 0.0134132, 0)
-
-[node name="MeshInstance3D" parent="Path3D/PathFollow3D/enemy" index="1"]
-transform = Transform3D(1, 0, 3.45301e-08, 0, 1, 0, -7.62871e-08, 0, 1, 0, 0.00752449, 0)
-
-[node name="SpotLight3D" parent="Path3D/PathFollow3D/enemy/MeshInstance3D" index="0"]
-transform = Transform3D(0.999852, -0.0148414, 0.00980674, 0.0144303, 0.999066, 0.0407215, -0.010402, -0.0405739, 0.999132, 0.000196457, -0.589731, 0.00649548)
-light_color = Color(0.992157, 0.988235, 0.388235, 1)
-light_energy = 16.0
-light_volumetric_fog_energy = 0.0
-shadow_enabled = true
-distance_fade_enabled = false
-spot_attenuation = 1e-05
-spot_angle = 23.87
-spot_angle_attenuation = 1e-05
-
-[node name="Cone" parent="Path3D/PathFollow3D/enemy/VisionArea" index="0"]
-cast_shadow = 0
-
-[node name="CollisionShape3D" parent="Path3D/PathFollow3D/enemy/VisionArea" index="1"]
-transform = Transform3D(5, 2.59349e-06, -9.38453e-14, 0, -2.64017e-07, -5, -2.14693e-06, 6.04, -2.18557e-07, -0.00577164, -0.311978, -6.49881)
-
-[node name="VisionTimer" parent="Path3D/PathFollow3D/enemy" index="3"]
-wait_time = 0.05
-
-[node name="VisionRayCast" parent="Path3D/PathFollow3D/enemy" index="4"]
-debug_shape_custom_color = Color(0, 1, 0, 1)
-
 [node name="Knight" parent="." instance=ExtResource("4_8lpuc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17)
 
 [node name="Skeleton3D" parent="Knight/Rig" index="0"]
-bones/0/position = Vector3(0, 0.000379483, 0)
-bones/1/position = Vector3(0, 0.387144, 0)
-bones/1/rotation = Quaternion(0.000792619, 0.0428042, -3.3956e-05, 0.999083)
-bones/2/rotation = Quaternion(0.000924982, -0.00103021, 8.10794e-05, 0.999999)
-bones/3/rotation = Quaternion(0.000345469, -1.69678e-05, -8.72916e-05, 1)
-bones/4/position = Vector3(0.211801, 0.133951, -0.000346597)
-bones/4/rotation = Quaternion(-0.558487, -0.063204, -0.650887, 0.510336)
-bones/5/rotation = Quaternion(1.7323e-08, -6.27361e-08, -0.47856, 0.878055)
-bones/7/rotation = Quaternion(-0.316094, -0.327238, 0.133666, 0.880416)
-bones/8/rotation = Quaternion(0.000854471, 0.00175114, -0.701048, 0.713112)
-bones/14/position = Vector3(-0.212003, 0.134052, -0.000401112)
-bones/14/rotation = Quaternion(-0.616417, 0.0838813, 0.625851, 0.47043)
-bones/15/rotation = Quaternion(1.22369e-08, 4.91041e-08, 0.503055, 0.864254)
-bones/17/rotation = Quaternion(-0.313871, 0.301149, -0.215907, 0.874173)
-bones/18/rotation = Quaternion(0.0021878, 0.00267192, 0.703111, 0.711071)
-bones/21/rotation = Quaternion(-0.00106503, -0.030071, -9.51957e-05, 0.999547)
-bones/24/position = Vector3(0.170945, 0.113587, -0.00081496)
-bones/24/rotation = Quaternion(0.99319, 0.0825458, 0.0745957, 0.0345629)
-bones/25/rotation = Quaternion(0.260793, 6.45965e-08, -1.81867e-07, 0.965395)
-bones/26/rotation = Quaternion(-0.54699, -0.205688, 0.0533207, 0.809723)
-bones/27/rotation = Quaternion(-3.01043e-08, 0.920304, -0.391205, 6.93849e-08)
-bones/28/position = Vector3(-0.170945, 0.113587, 0.000814988)
-bones/28/rotation = Quaternion(0.995824, -0.030323, 0.0306896, 0.0804585)
-bones/29/rotation = Quaternion(0.319592, -6.29337e-08, 2.22507e-07, 0.947555)
-bones/30/rotation = Quaternion(-0.58387, 0.113237, -0.0123958, 0.803816)
-bones/31/rotation = Quaternion(3.04791e-08, 0.920355, -0.391084, -6.94849e-08)
-bones/32/position = Vector3(0.170945, 0.292371, 0.575873)
-bones/32/rotation = Quaternion(0.707107, -2.29302e-07, -4.60552e-08, 0.707107)
-bones/33/position = Vector3(0.201926, 0.0269067, 0.199614)
-bones/33/rotation = Quaternion(-0.701375, -7.10642e-08, -6.99842e-08, 0.712792)
-bones/34/rotation = Quaternion(9.57951e-09, 1.7651e-09, 0.985952, -0.16703)
-bones/35/rotation = Quaternion(-1.04035e-07, 0.391084, 0.920355, -2.9526e-08)
-bones/37/rotation = Quaternion(1, -3.09407e-15, 1.94707e-07, -6.86069e-22)
-bones/39/position = Vector3(-0.170945, 0.292371, 0.575873)
-bones/39/rotation = Quaternion(0.707107, -3.82385e-08, 1.45009e-07, 0.707107)
-bones/40/position = Vector3(-0.170945, 0.0286373, 0.248679)
-bones/40/rotation = Quaternion(-0.709615, -7.03356e-08, -7.07385e-08, 0.70459)
-bones/41/rotation = Quaternion(-5.78822e-09, 6.38578e-10, 0.994894, 0.100925)
-bones/42/rotation = Quaternion(-1.04035e-07, 0.391084, 0.920355, -2.95261e-08)
-bones/44/rotation = Quaternion(1, 4.44086e-16, 1.94707e-07, 6.86069e-22)
-bones/46/position = Vector3(0.453507, 1.10512, -0.589679)
-bones/47/position = Vector3(0.520778, 0.776995, -0.05616)
-bones/47/rotation = Quaternion(0.796283, 0.00382861, 0.604912, 0.000603943)
-bones/48/position = Vector3(-0.453507, 1.10512, -0.589679)
-bones/49/position = Vector3(-0.510863, 0.776995, 0.0602522)
-bones/49/rotation = Quaternion(-0.760276, 0.00352682, 0.64959, -0.000559945)
+bones/1/position = Vector3(-3.39146e-19, 0.38806, -8.08588e-26)
+bones/1/rotation = Quaternion(0.00699473, 0.0402275, -0.000281613, 0.999166)
+bones/2/rotation = Quaternion(0.00770383, 0.000861932, -6.78355e-05, 0.99997)
+bones/3/rotation = Quaternion(0.00286235, 1.41267e-05, 7.26756e-05, 0.999996)
+bones/4/position = Vector3(0.211221, 0.133091, -0.00312072)
+bones/4/rotation = Quaternion(-0.577145, -0.0675014, -0.628249, 0.517349)
+bones/5/rotation = Quaternion(2.5968e-08, -4.15301e-08, -0.504735, 0.863275)
+bones/7/rotation = Quaternion(-0.298579, -0.337846, 0.12649, 0.883578)
+bones/8/rotation = Quaternion(-0.0036424, 0.00382189, -0.696424, 0.717612)
+bones/14/position = Vector3(-0.211053, 0.133006, -0.00307534)
+bones/14/rotation = Quaternion(-0.631185, 0.0846017, 0.603173, 0.48024)
+bones/15/rotation = Quaternion(3.39746e-08, 5.02288e-08, 0.525815, 0.850599)
+bones/17/rotation = Quaternion(-0.295599, 0.315727, -0.202393, 0.878621)
+bones/18/rotation = Quaternion(-0.00348224, -0.00342559, 0.696496, 0.717544)
+bones/21/rotation = Quaternion(-0.0088853, -0.0321914, -7.73431e-05, 0.999442)
+bones/24/position = Vector3(0.170945, 0.113587, 0.00518411)
+bones/24/rotation = Quaternion(0.992876, 0.0750483, 0.0720929, 0.0580254)
+bones/25/rotation = Quaternion(0.262766, 6.52473e-08, -1.76373e-07, 0.96486)
+bones/26/rotation = Quaternion(-0.53332, -0.195482, 0.0411347, 0.821988)
+bones/27/rotation = Quaternion(-3.04791e-08, 0.920355, -0.391084, 6.94848e-08)
+bones/28/position = Vector3(-0.170945, 0.113587, -0.00518408)
+bones/28/rotation = Quaternion(0.996997, -0.0278717, 0.0291253, 0.0661242)
+bones/29/rotation = Quaternion(0.316035, -6.35445e-08, 2.19606e-07, 0.948748)
+bones/30/rotation = Quaternion(-0.573965, 0.106868, -0.00724065, 0.811844)
+bones/31/rotation = Quaternion(2.57696e-08, 0.9137, -0.406391, -6.8976e-08)
+bones/33/position = Vector3(0.200061, 0.0269916, 0.217283)
+bones/33/rotation = Quaternion(-0.698594, -7.08926e-08, -7.01562e-08, 0.715519)
+bones/40/position = Vector3(-0.170945, 0.0230107, 0.222063)
+bones/40/rotation = Quaternion(-0.688218, -7.26306e-08, -6.83774e-08, 0.725504)
+bones/47/position = Vector3(0.520321, 0.786109, -0.0421459)
+bones/47/rotation = Quaternion(0.809579, 0.0359344, 0.585867, 0.00708235)
+bones/49/position = Vector3(-0.511002, 0.786109, 0.0672573)
 
 [node name="Knight_Helmet" parent="Knight/Rig/Skeleton3D" index="0"]
-transform = Transform3D(0.999726, 0.000438384, 0.0233875, -0.00039208, 0.999998, -0.0019844, -0.0233884, 0.00197469, 0.999725, 0.000161581, 1.19775, 0.00264739)
+transform = Transform3D(0.999839, 0.00210361, 0.0178265, -0.00179524, 0.999849, -0.0172963, -0.0178602, 0.0172615, 0.999692, 0.00186761, 1.1982, 0.0226353)
 
 [node name="Knight_Helmet" parent="Knight/Rig/Skeleton3D/Knight_Helmet" index="0"]
 transform = Transform3D(0.999999, -8.56263e-06, -0.00139428, 8.5545e-06, 1, -5.85308e-06, 0.00139429, 5.8412e-06, 0.999999, -2.94745e-05, -0.00640965, 2.86102e-05)
 
 [node name="Knight_Cape" parent="Knight/Rig/Skeleton3D" index="1"]
-transform = Transform3D(0.996513, 0.000362094, 0.0834428, -1.7722e-05, 0.999991, -0.00412775, -0.0834436, 0.00411187, 0.996504, 0.000163043, 1.19775, 0.0025928)
+transform = Transform3D(0.996621, 0.00283737, 0.0820872, 4.79663e-05, 0.999383, -0.0351263, -0.0821362, 0.0350115, 0.996006, 0.00184838, 1.19821, 0.022182)
 
 [node name="SpotLight3D" parent="Knight/Rig/Skeleton3D" index="3"]
 transform = Transform3D(0.999887, -0.0150267, 1.74732e-07, -0.0150241, -0.99971, 0.0188485, -0.000283056, -0.0188464, -0.999822, -0.548723, 0.415589, 0.740334)
@@ -1075,6 +1058,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 17.0076, 0)
 
 [node name="Camera3D" parent="Knight/CameraController/CameraTarget" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, -2.41447e-08, 0, 5.19183e-08, 1, 0, 0, 0)
+current = false
 
 [node name="rigid_box" parent="." instance=ExtResource("1_g1j0t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 3, 5)
@@ -1087,11 +1071,69 @@ unique_name_in_owner = true
 
 [node name="Timer" type="Timer" parent="."]
 
-[connection signal="game_over" from="Path3D/PathFollow3D/enemy" to="." method="_on_enemy_game_over"]
+[node name="FlatPath3D2" parent="." instance=ExtResource("7_t8y01")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -9)
+curve = SubResource("Curve3D_lf4re")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="FlatPath3D2"]
+transform = Transform3D(0.00533722, 0, -0.999974, 0, 1, 0, 0.999974, 0, 0.00533722, 31.6908, 0, -37.113)
+progress = 53.8136
+script = ExtResource("2_bx5mx")
+
+[node name="enemy" parent="FlatPath3D2/PathFollow3D" instance=ExtResource("3_ktybs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="FlatPath3D3" parent="." instance=ExtResource("7_t8y01")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -9)
+curve = SubResource("Curve3D_oj58o")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="FlatPath3D3"]
+transform = Transform3D(-0.999709, 0, -0.0236147, 0, 1, 0, 0.0236147, 0, -0.999709, 37.5507, 0, 2.56892)
+progress = 53.8136
+script = ExtResource("2_bx5mx")
+
+[node name="enemy" parent="FlatPath3D3/PathFollow3D" instance=ExtResource("3_ktybs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="FlatPath3D4" parent="." instance=ExtResource("7_t8y01")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -9)
+curve = SubResource("Curve3D_aqrp2")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="FlatPath3D4"]
+transform = Transform3D(-0.00370227, 0, -0.999981, 0, 1, 0, 0.999981, 0, -0.00370227, 5.63703, 0, 31.5882)
+progress = 53.8136
+script = ExtResource("2_bx5mx")
+
+[node name="enemy" parent="FlatPath3D4/PathFollow3D" instance=ExtResource("3_ktybs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="FlatPath3D5" parent="." instance=ExtResource("7_t8y01")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -9)
+curve = SubResource("Curve3D_3q8rx")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="FlatPath3D5"]
+transform = Transform3D(-0.362995, 0, -0.931778, 0, 1, 0, 0.931778, 0, -0.362995, 65.6781, 0, 33.7889)
+progress = 53.8136
+script = ExtResource("2_bx5mx")
+
+[node name="enemy" parent="FlatPath3D5/PathFollow3D" instance=ExtResource("3_ktybs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="FlatPath3D6" parent="." instance=ExtResource("7_t8y01")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -9)
+curve = SubResource("Curve3D_4kw5v")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="FlatPath3D6"]
+transform = Transform3D(-0.939994, 0, 0.341157, 0, 1, 0, -0.341157, 0, -0.939994, 12.9627, 0, -6.05699)
+progress = 53.8136
+script = ExtResource("2_bx5mx")
+
+[node name="enemy" parent="FlatPath3D6/PathFollow3D" instance=ExtResource("3_ktybs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
 [connection signal="entered_detection_zone" from="Knight" to="." method="_on_knight_entered_detection_zone"]
 [connection signal="item_collected" from="Knight" to="." method="_on_knight_item_collected"]
 [connection signal="left_detection_zone" from="Knight" to="." method="_on_knight_left_detection_zone"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 
-[editable path="Path3D/PathFollow3D/enemy"]
 [editable path="Knight"]

@@ -29,6 +29,27 @@ animation/fps=30
 animation/trimming=false
 animation/remove_immutable_tracks=true
 import_script/path=""
-_subresources={}
+_subresources={
+"nodes": {
+"PATH:Rig/Skeleton3D/1H_Crossbow": {
+"import/skip_import": true
+},
+"PATH:Rig/Skeleton3D/1H_Crossbow/1H_Crossbow": {
+"import/skip_import": true
+},
+"PATH:Rig/Skeleton3D/2H_Crossbow": {
+"import/skip_import": true
+},
+"PATH:Rig/Skeleton3D/Knife": {
+"import/skip_import": true
+},
+"PATH:Rig/Skeleton3D/Knife_Offhand": {
+"import/skip_import": true
+},
+"PATH:Rig/Skeleton3D/Throwable": {
+"import/skip_import": true
+}
+}
+}
 gltf/naming_version=1
 gltf/embedded_image_handling=1

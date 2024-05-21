@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3ewp162uq5fv"]
+
+[ext_resource type="Script" path="res://Path3D.gd" id="1_lyr66"]
+
+[sub_resource type="Curve3D" id="Curve3D_qfolq"]
+
+[node name="FlatPath3D" type="Path3D"]
+curve = SubResource("Curve3D_qfolq")
+script = ExtResource("1_lyr66")
