@@ -27,6 +27,21 @@ func time_convert(time_in_sec):
 func add_object(obj):
 	var new_texture = TextureRect.new()
 	var texture = load(obj) # Load the texture from the provided path
-	new_texture.set_texture(texture) # Set the texture for the TextureRect
+	new_texture.texture = texture # Set the texture for the TextureRect
 	
-	$MarginContainer/VBoxContainer/HBoxContainer.add_child(new_texture)
+	# Set stretch mode to keep aspect ratio
+	new_texture.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	
+	# Get the original size of the texture
+	var original_size = texture.get_size()
+	
+	# Define the desired vertical size
+	var desired_vertical_size = 100.0 # Replace with your desired vertical size in pixels
+	
+	# Calculate the scale factor
+	var scale_factor = desired_vertical_size / original_size.y
+	
+	# Apply the scale factor to the rect_scale
+	new_texture.size = Vector2(scale_factor, scale_factor)
+	
+	$MarginContainer/GridContainer2/HBoxContainer.add_child(new_texture)

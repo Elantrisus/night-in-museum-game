@@ -14,7 +14,7 @@ func _process(delta):
 	
 	if interactable != null:
 		if Input.is_action_just_pressed("e"):
-			interactable.interact("res://assets/graphics/pickable/Free_Chicken_House.png")
+			interactable.interact("res://assets/vase/vase.png")
 			queue_free()
 
 
