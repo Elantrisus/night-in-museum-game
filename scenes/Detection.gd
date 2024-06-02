@@ -5,7 +5,10 @@ extends Node
 
 signal detection_timeout()
 
-const game_over_threshold = 1 # Adjust the threshold for game over here
+const game_over_threshold = 1.2 # Adjust the threshold for game over here
+
+const yellow_material = preload("res://scenes/yellow_material.tres")
+const red_material = preload("res://scenes/red_material.tres")
 
 var is_seen = false
 var timer_value = 0
@@ -41,6 +44,11 @@ func _process(delta):
 	indicator.scale.x = scale_factor
 	indicator.scale.y = scale_factor
 	indicator.scale.z = scale_factor
+	
+	if timer_value > game_over_threshold * 0.6:
+		indicator.set_surface_override_material(0, red_material)
+	else:
+		indicator.set_surface_override_material(0, yellow_material)
 
 	# Check if game over condition is met
 	if timer_value >= game_over_threshold:

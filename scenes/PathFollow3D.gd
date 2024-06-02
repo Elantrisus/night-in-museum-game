@@ -1,6 +1,6 @@
 extends PathFollow3D
 
-var speed = 4.0 # Speed in units per second
+var speed = 5.0 # Speed in units per second
 var total_length = 0.0
 
 # Called when the node enters the scene tree for the first time.

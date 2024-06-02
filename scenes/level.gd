@@ -9,7 +9,7 @@ class_name Game
 @onready var game_over_screen = preload("res://scenes/menu/game_over.tscn")
 @onready var success_screen = preload("res://scenes/menu/success.tscn")
 
-const ITEMS_TO_FIND = 2
+const ITEMS_TO_FIND = 3
 var found_items_count = 0
 
 # Called when the node enters the scene tree for the first time.
