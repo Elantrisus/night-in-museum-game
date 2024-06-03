@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://cm0j74dtrw6ep"]
+
+[ext_resource type="Texture2D" uid="uid://ng7jhrd5hhht" path="res://assets/materials/StoneTilesFloor03_MR_4K/StoneTilesFloor03_4K_BaseColor.png" id="1_b0an7"]
+[ext_resource type="Texture2D" uid="uid://cq8pt64wkbqcu" path="res://assets/materials/StoneTilesFloor03_MR_4K/StoneTilesFloor03_4K_Height.png" id="2_eu4mf"]
+[ext_resource type="Texture2D" uid="uid://dhj4fs6ys2kk8" path="res://assets/materials/StoneTilesFloor03_MR_4K/StoneTilesFloor03_4K_Normal.png" id="3_o6v5w"]
+[ext_resource type="Texture2D" uid="uid://w775aeyrxqhh" path="res://assets/materials/StoneTilesFloor03_MR_4K/StoneTilesFloor03_4K_Roughness.png" id="4_l4rgx"]
+
+[resource]
+albedo_texture = ExtResource("1_b0an7")
+roughness_texture = ExtResource("4_l4rgx")
+normal_enabled = true
+normal_texture = ExtResource("3_o6v5w")
+heightmap_enabled = true
+heightmap_texture = ExtResource("2_eu4mf")

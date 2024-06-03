@@ -55,3 +55,11 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
+
+[node name="StaminaBar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 941.0
+offset_top = 606.0
+offset_right = 1141.0
+offset_bottom = 633.0
+value = 100.0

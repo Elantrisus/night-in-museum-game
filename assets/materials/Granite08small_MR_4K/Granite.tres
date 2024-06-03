@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://cnnravgxusc15"]
+
+[ext_resource type="Texture2D" uid="uid://b5eg82ucwy2ee" path="res://assets/materials/Granite08small_MR_4K/Granite08small_4K_BaseColor.png" id="1_emkjt"]
+[ext_resource type="Texture2D" uid="uid://c4feqxb2lrfab" path="res://assets/materials/Granite08small_MR_4K/Granite08small_4K_Height.png" id="2_mclux"]
+[ext_resource type="Texture2D" uid="uid://dfrxbwg028avf" path="res://assets/materials/Granite08small_MR_4K/Granite08small_4K_Normal.png" id="3_m8duf"]
+[ext_resource type="Texture2D" uid="uid://ljp1ugb5y0qd" path="res://assets/materials/Granite08small_MR_4K/Granite08small_4K_Roughness.png" id="4_q6cvi"]
+
+[resource]
+albedo_texture = ExtResource("1_emkjt")
+metallic = 0.03
+roughness_texture = ExtResource("4_q6cvi")
+normal_enabled = true
+normal_texture = ExtResource("3_m8duf")
+heightmap_texture = ExtResource("2_mclux")

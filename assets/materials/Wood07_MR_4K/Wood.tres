@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://dga2g7hjuwqwe"]
+
+[ext_resource type="Texture2D" uid="uid://ysx20hbdvb4g" path="res://assets/materials/Wood07_MR_4K/Wood07_4K_BaseColor.png" id="1_caako"]
+[ext_resource type="Texture2D" uid="uid://dtbel27xsbjcg" path="res://assets/materials/Wood07_MR_4K/Wood07_4K_Height.png" id="2_b27rp"]
+[ext_resource type="Texture2D" uid="uid://bvygm5qtlniel" path="res://assets/materials/Wood07_MR_4K/Wood07_4K_Normal.png" id="3_6nrp2"]
+[ext_resource type="Texture2D" uid="uid://dlpvlnx40dajw" path="res://assets/materials/Wood07_MR_4K/Wood07_4K_Roughness.png" id="4_i5eou"]
+
+[resource]
+albedo_texture = ExtResource("1_caako")
+roughness = 0.4
+roughness_texture = ExtResource("4_i5eou")
+normal_enabled = true
+normal_scale = 0.51
+normal_texture = ExtResource("3_6nrp2")
+heightmap_enabled = true
+heightmap_scale = 0.028
+heightmap_texture = ExtResource("2_b27rp")

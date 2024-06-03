@@ -14,8 +14,10 @@ var found_items_count = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	print("ready")
 	timer.start(60*1.5)
-	pass # Replace with function body.
+	player.set_ui(ui)
+	ui.initialize_icons(ITEMS_TO_FIND)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
