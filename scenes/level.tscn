@@ -1,9 +1,10 @@
-[gd_scene load_steps=24 format=3 uid="uid://dwb1uuxwnkhr2"]
+[gd_scene load_steps=25 format=3 uid="uid://dwb1uuxwnkhr2"]
 
 [ext_resource type="PackedScene" uid="uid://b1k2n0mngv17g" path="res://scenes/rigid_box.tscn" id="1_g1j0t"]
 [ext_resource type="Script" path="res://scenes/level.gd" id="1_kc3au"]
 [ext_resource type="Script" path="res://scenes/PathFollow3D.gd" id="2_bx5mx"]
 [ext_resource type="Material" uid="uid://dga2g7hjuwqwe" path="res://assets/materials/Wood07_MR_4K/Wood.tres" id="2_i8fc3"]
+[ext_resource type="Material" uid="uid://cm0j74dtrw6ep" path="res://assets/materials/StoneTilesFloor03_MR_4K/new_standard_material_3d.tres" id="3_7j2js"]
 [ext_resource type="PackedScene" uid="uid://cfydsgkur4y6i" path="res://scenes/enemy.tscn" id="3_ktybs"]
 [ext_resource type="PackedScene" uid="uid://blvrf2ko8lwu8" path="res://scenes/knight.tscn" id="4_8lpuc"]
 [ext_resource type="PackedScene" uid="uid://qvkjv5iekhk8" path="res://scenes/ui/ui.tscn" id="6_w68yh"]
@@ -139,6 +140,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="OccluderInstance3D" type="OccluderInstance3D" parent="walls/wall"]
 
@@ -150,6 +152,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall2"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="walls/wall2/MeshInstance3D"]
 mesh = SubResource("BoxMesh_bs18r")
@@ -162,6 +165,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall3"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall4" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.85591, 2.38556, -1.52787)
@@ -171,6 +175,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall4"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall5" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.85591, 2.38556, -11.5279)
@@ -180,6 +185,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall5"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall6" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.85591, 2.38556, -11.5279)
@@ -189,6 +195,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall6"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall7" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.14409, 2.38556, -11.5279)
@@ -198,6 +205,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall7"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall8" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -5.14409, 2.38556, -6.52787)
@@ -207,6 +215,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall8"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall9" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.14409, 2.38556, -1.52787)
@@ -216,6 +225,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall9"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall10" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.14409, 2.38556, 19.4721)
@@ -225,6 +235,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall10"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall11" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.85591, 2.38556, 19.4721)
@@ -234,6 +245,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall11"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall16" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 17.8559, 2.38556, 19.4721)
@@ -243,6 +255,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall16"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall17" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 30.8559, 2.38556, 19.4721)
@@ -252,6 +265,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall17"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall18" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 40.8559, 2.38556, 19.4721)
@@ -261,6 +275,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall18"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall19" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 44.8559, 2.38556, 19.4721)
@@ -270,6 +285,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall19"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall20" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 49.8559, 2.38556, 24.4721)
@@ -279,6 +295,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall20" type="StaticBody3D" parent="walls/wall20"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -20.1441, -0.0144401, -49.528)
@@ -288,6 +305,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall20"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall21" type="StaticBody3D" parent="walls/wall20"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.1441, -0.0144401, -49.5279)
@@ -297,6 +315,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall21"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall22" type="StaticBody3D" parent="walls/wall20"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.144098, -0.0144401, -49.5279)
@@ -306,6 +325,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall20" type="StaticBody3D" parent="walls/wall20/wall22"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -30.1441, -0.0144401, -36.528)
@@ -315,6 +335,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall20"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall21" type="StaticBody3D" parent="walls/wall20/wall22"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -20.1441, -0.0144401, -36.5279)
@@ -324,6 +345,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall21"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall22" type="StaticBody3D" parent="walls/wall20/wall22"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.1441, -0.0144401, -36.5279)
@@ -333,6 +355,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall20" type="StaticBody3D" parent="walls/wall20/wall22/wall22"]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 39.8559, -0.0144401, -62.0054)
@@ -342,6 +365,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall20"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall21" type="StaticBody3D" parent="walls/wall20/wall22/wall22"]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 39.8559, -0.0144401, -72.0055)
@@ -351,6 +375,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall21"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall22" type="StaticBody3D" parent="walls/wall20/wall22/wall22"]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 39.8559, -0.0144401, -82.0054)
@@ -360,6 +385,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall20" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22"]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 40.0182, -0.0144401, 8.99455)
@@ -369,6 +395,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall20"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall21" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22"]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 40.0182, -0.0144401, -1.00546)
@@ -378,6 +405,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall21"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall22" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22"]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 40.0182, -0.0144401, -11.0054)
@@ -387,6 +415,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall22"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall20" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22/wall22"]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5.0182, -0.0144401, -5.00547)
@@ -396,6 +425,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall20"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall20" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall20"]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -14.9818, -0.0144401, -76.0055)
@@ -405,6 +435,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall20/wall20"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall20" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall20/wall20"]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5.01819, -0.0144401, 4.99453)
@@ -414,6 +445,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall20/wall20/wall20"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall20" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall20/wall20/wall20"]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 10.0182, -0.0144401, -0.00546265)
@@ -423,6 +455,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall20/wall20/wall20/wall20"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall21" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22/wall22"]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5.01822, -0.0144401, -15.0055)
@@ -432,6 +465,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall21"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall23" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22/wall22"]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5.01822, -0.0144401, -15.0055)
@@ -441,6 +475,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall23"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall22" type="StaticBody3D" parent="walls/wall20/wall22/wall22/wall22/wall22"]
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5.01823, -0.0144401, -25.0055)
@@ -450,6 +485,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall20/wall22/wall22/wall22/wall22/wall22"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall21" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 49.8559, 2.38556, 34.4721)
@@ -459,6 +495,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall21"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall22" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 49.8559, 2.38556, 44.4721)
@@ -468,6 +505,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall22"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall23" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1, 0, 2.13163e-14, 0, 1, 0, -2.13163e-14, 0, 1, 44.8559, 2.38556, 49.4721)
@@ -477,6 +515,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall23"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall24" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1, 0, 2.13163e-14, 0, 1, 0, -2.13163e-14, 0, 1, 34.8559, 2.38556, 49.4721)
@@ -486,6 +525,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall24"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall25" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1, 0, 2.13163e-14, 0, 1, 0, -2.13163e-14, 0, 1, 24.8559, 2.38556, 49.4721)
@@ -495,6 +535,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall25"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall26" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1, 0, 2.13163e-14, 0, 1, 0, -2.13163e-14, 0, 1, 14.8559, 2.38556, 49.4721)
@@ -504,6 +545,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall26"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall27" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1, 0, 2.13163e-14, 0, 1, 0, -2.13163e-14, 0, 1, 4.85591, 2.38556, 49.4721)
@@ -513,6 +555,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall27"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall28" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1, 0, 2.13163e-14, 0, 1, 0, -2.13163e-14, 0, 1, -5.14409, 2.38556, 49.4721)
@@ -522,6 +565,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall28"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall29" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1, 0, 2.13163e-14, 0, 1, 0, -2.13163e-14, 0, 1, -15.1441, 2.38556, 49.4721)
@@ -531,6 +575,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall29"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall30" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1, 0, 2.13163e-14, 0, 1, 0, -2.13163e-14, 0, 1, -25.1441, 2.38556, 49.4721)
@@ -540,6 +585,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall30"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall31" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1, 0, 2.13163e-14, 0, 1, 0, -2.13163e-14, 0, 1, -35.1441, 2.38556, 49.4721)
@@ -549,6 +595,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall31"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall32" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1, 0, 2.13163e-14, 0, 1, 0, -2.13163e-14, 0, 1, -45.1441, 2.38556, 49.4721)
@@ -558,6 +605,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall32"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall33" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -50.1441, 2.38556, 44.4721)
@@ -567,6 +615,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall33"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall34" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -50.1441, 2.38556, 34.4721)
@@ -576,6 +625,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall34"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall35" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -50.1441, 2.38556, 24.4721)
@@ -585,6 +635,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall35"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall36" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -50.1441, 2.38556, 14.4721)
@@ -594,6 +645,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall36"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall37" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -50.1441, 2.38556, 4.47213)
@@ -603,6 +655,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall37"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall38" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -50.1441, 2.38556, -5.52787)
@@ -612,6 +665,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall38"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall39" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -50.1441, 2.38556, -15.5279)
@@ -621,6 +675,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall39"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall40" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -50.1441, 2.38556, -25.5279)
@@ -630,6 +685,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall40"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall41" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -50.1441, 2.38556, -35.5279)
@@ -639,6 +695,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall41"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall42" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -50.1441, 2.38556, -44.5279)
@@ -648,6 +705,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall42"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall43" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -45.1441, 2.38556, -49.5279)
@@ -657,6 +715,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall43"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall44" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -35.1441, 2.38556, -49.5279)
@@ -666,6 +725,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall44"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall45" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -25.1441, 2.38556, -49.5279)
@@ -675,6 +735,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall45"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall46" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -15.1441, 2.38556, -49.5279)
@@ -684,6 +745,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall46"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall47" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -5.14409, 2.38556, -49.5279)
@@ -693,6 +755,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall47"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall48" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 4.85591, 2.38556, -49.5279)
@@ -702,6 +765,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall48"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall49" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 14.8559, 2.38556, -49.5279)
@@ -711,6 +775,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall49"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall50" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 24.8559, 2.38556, -49.5279)
@@ -720,6 +785,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall50"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall51" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 34.8559, 2.38556, -49.5279)
@@ -729,6 +795,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall51"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall52" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 49.8559, 2.38556, -5.52787)
@@ -738,6 +805,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall52"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall53" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 49.8559, 2.38556, 4.47213)
@@ -747,6 +815,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall53"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall54" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 49.8559, 2.38556, 14.4721)
@@ -756,6 +825,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall54"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall55" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 49.8559, 2.38556, -35.5279)
@@ -765,6 +835,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall55"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall56" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 49.8559, 2.38556, -25.5279)
@@ -774,6 +845,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall56"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall57" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 49.8559, 2.38556, -15.5279)
@@ -783,6 +855,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall57"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall58" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 49.8559, 2.38556, -35.5279)
@@ -792,6 +865,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall58"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall59" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 49.8559, 2.38556, -25.5279)
@@ -801,6 +875,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall59"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall60" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 49.8559, 2.38556, -15.5279)
@@ -810,6 +885,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall60"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall61" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 49.8559, 2.38556, -44.5279)
@@ -819,6 +895,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall61"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall62" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 44.8559, 2.38556, -49.5279)
@@ -828,6 +905,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall62"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall63" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -45.1441, 2.38556, 33.4721)
@@ -837,6 +915,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall63"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall64" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -35.1441, 2.38556, 33.4721)
@@ -846,6 +925,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall64"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall65" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -25.1441, 2.38556, 33.4721)
@@ -855,6 +935,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall65"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall66" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -25.1441, 2.38556, 31.4721)
@@ -864,6 +945,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall66"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall67" type="StaticBody3D" parent="walls"]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -25.1441, 2.38556, 44.4721)
@@ -873,6 +955,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall67"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall12" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45.1441, 2.38556, 19.4721)
@@ -882,6 +965,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall12"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall13" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -35.1441, 2.38556, 19.4721)
@@ -891,6 +975,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall13"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall14" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -25.1441, 2.38556, 19.4721)
@@ -900,6 +985,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall14"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall15" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -15.1441, 2.38556, 19.4721)
@@ -909,6 +995,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall15"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall68" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 41.8559, 2.38556, -10.5279)
@@ -918,6 +1005,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall68"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall69" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 44.8559, 2.38556, -31.5279)
@@ -927,6 +1015,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall69"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall71" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 32.8559, 2.38556, -44.5279)
@@ -936,6 +1025,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall71"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall72" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.8559, 2.38556, -26.5279)
@@ -945,6 +1035,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall72"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall73" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.8559, 2.38556, -16.5279)
@@ -954,6 +1045,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall73"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall74" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.8559, 2.38556, -6.5279)
@@ -963,6 +1055,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall74"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall75" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.8559, 2.38556, 24.4721)
@@ -972,6 +1065,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall75"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall76" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -10.1441, 2.38556, 44.4721)
@@ -981,6 +1075,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall76"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall77" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -10.1441, 2.38556, 34.4721)
@@ -990,6 +1085,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall77"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="wall70" type="StaticBody3D" parent="walls"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 34.8559, 2.38556, -31.5279)
@@ -999,6 +1095,7 @@ shape = SubResource("BoxShape3D_28sx2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="walls/wall70"]
 mesh = SubResource("BoxMesh_bs18r")
+surface_material_override/0 = ExtResource("3_7j2js")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
 transform = Transform3D(0.962139, -0.264674, 0.0650896, -0.27018, -0.894649, 0.355819, -0.0359436, -0.359933, -0.932286, -2.29928, 4.37489, -10.0199)
@@ -1015,49 +1112,60 @@ spot_angle = 41.36
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17)
 
 [node name="Skeleton3D" parent="Knight/Rig" index="0"]
-bones/0/position = Vector3(0, 0.00238244, 0)
-bones/1/position = Vector3(0, 0.373097, 0)
-bones/1/rotation = Quaternion(0.00653407, 0.0402276, -0.000263066, 0.999169)
-bones/2/rotation = Quaternion(0.00767403, -0.0073411, 0.000577756, 0.999943)
-bones/3/rotation = Quaternion(0.00286226, -0.000120752, -0.000621216, 0.999996)
-bones/4/position = Vector3(0.210419, 0.132689, -0.00290405)
-bones/4/rotation = Quaternion(-0.573429, -0.0603965, -0.616105, 0.536606)
-bones/5/rotation = Quaternion(3.42581e-08, -7.01442e-08, -0.514607, 0.857427)
-bones/7/rotation = Quaternion(-0.303065, -0.34791, 0.121878, 0.878781)
-bones/8/rotation = Quaternion(-0.00279047, 0.00464889, -0.693222, 0.720703)
-bones/14/position = Vector3(-0.211855, 0.133408, -0.003292)
-bones/14/rotation = Quaternion(-0.623052, 0.0863505, 0.606745, 0.486014)
-bones/15/rotation = Quaternion(1.90275e-08, 4.8111e-08, 0.539798, 0.841795)
-bones/17/rotation = Quaternion(-0.298093, 0.321752, -0.207719, 0.874339)
-bones/18/rotation = Quaternion(-0.00083112, -0.000176706, 0.693647, 0.720314)
-bones/21/rotation = Quaternion(-0.00884773, -0.022802, -0.000650982, 0.999701)
-bones/24/position = Vector3(0.170945, 0.113587, -0.00439946)
-bones/24/rotation = Quaternion(0.990658, 0.0780013, 0.0735809, 0.0842502)
-bones/25/rotation = Quaternion(0.416896, 6.30904e-08, -2.81325e-07, 0.908954)
-bones/26/rotation = Quaternion(-0.599398, -0.186231, 0.0751327, 0.774852)
-bones/28/position = Vector3(-0.170945, 0.113587, 0.00439949)
-bones/28/rotation = Quaternion(0.989537, -0.0317587, 0.0270786, 0.13811)
-bones/29/rotation = Quaternion(0.423952, -5.84898e-08, 2.95476e-07, 0.905685)
-bones/30/rotation = Quaternion(-0.641725, 0.10512, -0.0211925, 0.759401)
-bones/32/position = Vector3(0.170945, 0.294337, 0.577839)
-bones/33/position = Vector3(0.200061, 0.0326216, 0.162763)
-bones/33/rotation = Quaternion(-0.659571, -7.45376e-08, -6.62201e-08, 0.751642)
-bones/39/position = Vector3(-0.170945, 0.294337, 0.577839)
-bones/40/position = Vector3(-0.170945, 0.0380419, 0.262834)
-bones/40/rotation = Quaternion(-0.71904, -6.951e-08, -7.15266e-08, 0.694968)
-bones/47/position = Vector3(0.520321, 0.777128, -0.044541)
-bones/47/rotation = Quaternion(0.807719, 0.0333148, 0.588593, 0.00626496)
-bones/49/position = Vector3(-0.511002, 0.777128, 0.0648622)
-bones/49/rotation = Quaternion(-0.774467, 0.0309191, 0.63183, -0.00595499)
+bones/0/position = Vector3(0, 0.000654927, 0)
+bones/1/position = Vector3(1.21572e-19, 0.383217, 2.89851e-26)
+bones/1/rotation = Quaternion(0.00696434, 0.0402275, -0.000280389, 0.999166)
+bones/2/rotation = Quaternion(0.00769719, -0.00354812, 0.000279243, 0.999964)
+bones/3/rotation = Quaternion(0.00286233, -5.81967e-05, -0.000299395, 0.999996)
+bones/4/position = Vector3(0.210791, 0.132875, -0.00300454)
+bones/4/rotation = Quaternion(-0.576923, -0.0648404, -0.62258, 0.524738)
+bones/5/rotation = Quaternion(3.04859e-08, -3.81163e-08, -0.507505, 0.861649)
+bones/7/rotation = Quaternion(-0.299321, -0.342779, 0.122783, 0.881949)
+bones/8/rotation = Quaternion(-0.00337522, 0.00408125, -0.695421, 0.718583)
+bones/14/position = Vector3(-0.211483, 0.133222, -0.00319151)
+bones/14/rotation = Quaternion(-0.628383, 0.0872367, 0.605858, 0.480063)
+bones/15/rotation = Quaternion(3.00745e-08, 6.12031e-08, 0.530162, 0.847897)
+bones/17/rotation = Quaternion(-0.29544, 0.318257, -0.203457, 0.877515)
+bones/18/rotation = Quaternion(-0.00260499, -0.00235054, 0.695556, 0.718463)
+bones/21/rotation = Quaternion(-0.008859, -0.0240174, -0.000576927, 0.999672)
+bones/24/position = Vector3(0.170945, 0.113587, -0.00605998)
+bones/24/rotation = Quaternion(0.992667, 0.0770448, 0.0719513, 0.0591609)
+bones/25/rotation = Quaternion(0.344765, 6.23819e-08, -2.37494e-07, 0.938689)
+bones/26/rotation = Quaternion(-0.570921, -0.191686, 0.0577783, 0.796221)
+bones/27/rotation = Quaternion(-2.59625e-08, 0.914837, -0.403824, 6.88924e-08)
+bones/28/position = Vector3(-0.170945, 0.113587, 0.00606001)
+bones/28/rotation = Quaternion(0.990656, -0.0304981, 0.0272918, 0.130098)
+bones/29/rotation = Quaternion(0.382794, -6.10987e-08, 2.66645e-07, 0.923834)
+bones/30/rotation = Quaternion(-0.603535, 0.106149, -0.0147006, 0.790102)
+bones/31/rotation = Quaternion(3.04791e-08, 0.920355, -0.391084, -6.94849e-08)
+bones/32/position = Vector3(0.170945, 0.297792, 0.581294)
+bones/33/position = Vector3(0.200061, 0.0285401, 0.171065)
+bones/33/rotation = Quaternion(-0.671015, -7.36764e-08, -6.71773e-08, 0.741443)
+bones/34/rotation = Quaternion(9.00769e-09, 1.65974e-09, 0.987589, -0.15706)
+bones/35/rotation = Quaternion(-1.04035e-07, 0.391084, 0.920355, -2.9526e-08)
+bones/37/rotation = Quaternion(1, -2.98799e-15, 1.94707e-07, -6.44762e-22)
+bones/39/position = Vector3(-0.170945, 0.297792, 0.581294)
+bones/39/rotation = Quaternion(0.707107, -3.82385e-08, 1.45009e-07, 0.707107)
+bones/40/position = Vector3(-0.170945, 0.0352809, 0.265894)
+bones/40/rotation = Quaternion(-0.709858, -7.0797e-08, -7.03825e-08, 0.704345)
+bones/41/rotation = Quaternion(-5.44081e-09, 6.00249e-10, 0.99549, 0.0948673)
+bones/42/rotation = Quaternion(-1.04035e-07, 0.391084, 0.920355, -2.95261e-08)
+bones/44/rotation = Quaternion(1, 4.44086e-16, 1.94707e-07, 6.44762e-22)
+bones/46/position = Vector3(0.453507, 1.09318, -0.595651)
+bones/47/position = Vector3(0.520321, 0.782595, -0.0425993)
+bones/47/rotation = Quaternion(0.809229, 0.0354342, 0.586383, 0.00693492)
+bones/48/position = Vector3(-0.453507, 1.09318, -0.595651)
+bones/49/position = Vector3(-0.511002, 0.782595, 0.0668039)
+bones/49/rotation = Quaternion(-0.776098, 0.0330046, 0.629712, -0.00673426)
 
 [node name="Knight_Helmet" parent="Knight/Rig/Skeleton3D" index="0"]
-transform = Transform3D(0.999796, 0.00318023, 0.0199619, -0.00285334, 0.999862, -0.0163831, -0.0200112, 0.0163228, 0.999667, 0.00121213, 1.18539, 0.0218976)
+transform = Transform3D(0.999677, 0.0030436, 0.0252309, -0.00260826, 0.999847, -0.0172692, -0.0252796, 0.0171978, 0.999533, 0.00153556, 1.19376, 0.022602)
 
 [node name="Knight_Helmet" parent="Knight/Rig/Skeleton3D/Knight_Helmet" index="0"]
 transform = Transform3D(0.999999, -8.56263e-06, -0.00139428, 8.5545e-06, 1, -5.85308e-06, 0.00139429, 5.8412e-06, 0.999999, -2.94745e-05, -0.00640965, 2.86102e-05)
 
 [node name="Knight_Cape" parent="Knight/Rig/Skeleton3D" index="1"]
-transform = Transform3D(0.997851, 0.00263556, 0.0654745, -0.000398815, 0.999416, -0.0341516, -0.0655263, 0.0340521, 0.99727, 0.00122555, 1.1854, 0.0214449)
+transform = Transform3D(0.997317, 0.00276301, 0.0731577, -0.000197401, 0.999385, -0.0350536, -0.0732096, 0.0349451, 0.996704, 0.00154224, 1.19377, 0.0221488)
 
 [node name="SpotLight3D" parent="Knight/Rig/Skeleton3D" index="3"]
 transform = Transform3D(0.999887, -0.0150267, 1.74732e-07, -0.0150241, -0.99971, 0.0188485, -0.000283056, -0.0188464, -0.999822, -0.548723, 0.415589, 0.740334)
