@@ -50,7 +50,6 @@ func _physics_process(delta):
 
 	# Determine the speed based on whether the sprint key is pressed and available.
 	var current_speed = BASE_SPEED
-	print(sprint_time_left)
 	if Input.is_action_pressed("shift") and sprint_cooldown_left <= 0:
 		is_sprinting = true
 	else:
@@ -79,16 +78,13 @@ func _physics_process(delta):
 	update_stamina_ui()
 
 func interact(arg):
-	print(arg)
 	item_collected.emit(arg)
 	
 func entered_view(arg):
 	entered_detection_zone.emit(arg)
-	print(arg)
 
 func left_view(arg):
 	left_detection_zone.emit(arg)
-	print(arg)
 
 func update_stamina_ui():
 	var stamina_ratio = sprint_time_left / SPRINT_DURATION

@@ -1294,64 +1294,53 @@ spot_angle = 41.36
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.8378, 0.491845, 47.8845)
 
 [node name="Skeleton3D" parent="Knight/Rig" index="0"]
-bones/0/position = Vector3(0, 0.000713631, 0)
-bones/1/position = Vector3(8.99107e-20, 0.371709, 2.14364e-26)
-bones/1/rotation = Quaternion(0.00696208, 0.0402275, -0.000280298, 0.999166)
-bones/2/rotation = Quaternion(0.00769639, -0.00374262, 0.00029455, 0.999963)
-bones/3/rotation = Quaternion(0.00286233, -6.13908e-05, -0.000315827, 0.999996)
-bones/4/position = Vector3(0.210772, 0.132866, -0.00299941)
-bones/4/rotation = Quaternion(-0.572171, -0.063631, -0.622815, 0.529785)
-bones/5/rotation = Quaternion(3.71297e-08, -4.11688e-08, -0.511493, 0.859288)
-bones/7/rotation = Quaternion(-0.298317, -0.348893, 0.121506, 0.880066)
-bones/8/rotation = Quaternion(-0.00264764, 0.00478752, -0.692684, 0.72122)
-bones/14/position = Vector3(-0.211502, 0.133231, -0.00319664)
-bones/14/rotation = Quaternion(-0.623855, 0.0864808, 0.606804, 0.484887)
-bones/15/rotation = Quaternion(5.26977e-08, 5.52645e-08, 0.534045, 0.845456)
-bones/17/rotation = Quaternion(-0.294854, 0.324443, -0.202627, 0.875637)
-bones/18/rotation = Quaternion(-0.000430729, 0.000313961, 0.693215, 0.720731)
-bones/21/rotation = Quaternion(-0.00885772, -0.0238689, -0.000585977, 0.999676)
-bones/24/position = Vector3(0.170945, 0.113587, -0.00609513)
-bones/24/rotation = Quaternion(0.990067, 0.0776696, 0.0740795, 0.0908127)
-bones/25/rotation = Quaternion(0.426745, 5.77437e-08, -2.91032e-07, 0.904372)
-bones/26/rotation = Quaternion(-0.613557, -0.187165, 0.0728723, 0.76368)
-bones/27/rotation = Quaternion(-2.59831e-08, 0.914956, -0.403553, 6.88836e-08)
-bones/28/position = Vector3(-0.170945, 0.113587, 0.00609515)
-bones/28/rotation = Quaternion(0.986512, -0.0323621, 0.0264262, 0.158267)
-bones/29/rotation = Quaternion(0.454664, -5.87084e-08, 3.18921e-07, 0.890663)
-bones/30/rotation = Quaternion(-0.64328, 0.10505, -0.0215588, 0.758084)
-bones/31/rotation = Quaternion(3.04791e-08, 0.920355, -0.391084, -6.94849e-08)
-bones/32/position = Vector3(0.170945, 0.297674, 0.581176)
-bones/32/rotation = Quaternion(0.707107, -2.29302e-07, -4.60552e-08, 0.707107)
-bones/33/position = Vector3(0.200061, 0.0290086, 0.170207)
-bones/33/rotation = Quaternion(-0.669874, -7.37804e-08, -6.70581e-08, 0.742475)
-bones/34/rotation = Quaternion(9.00769e-09, 1.65974e-09, 0.987589, -0.15706)
-bones/35/rotation = Quaternion(-1.04035e-07, 0.391084, 0.920355, -2.9526e-08)
-bones/37/rotation = Quaternion(1, -2.98799e-15, 1.94707e-07, -6.44762e-22)
-bones/39/position = Vector3(-0.170945, 0.297674, 0.581176)
-bones/39/rotation = Quaternion(0.707107, -3.82385e-08, 1.45009e-07, 0.707107)
-bones/40/position = Vector3(-0.170945, 0.0360657, 0.266384)
-bones/40/rotation = Quaternion(-0.710522, -7.07428e-08, -7.04543e-08, 0.703675)
-bones/41/rotation = Quaternion(-5.44081e-09, 6.00249e-10, 0.99549, 0.0948673)
-bones/42/rotation = Quaternion(-1.04035e-07, 0.391084, 0.920355, -2.95261e-08)
-bones/44/rotation = Quaternion(1, 4.44086e-16, 1.94707e-07, 6.44762e-22)
-bones/46/position = Vector3(0.453507, 1.09318, -0.595651)
-bones/47/position = Vector3(0.520321, 0.772781, -0.0426653)
-bones/47/rotation = Quaternion(0.809178, 0.0353616, 0.586458, 0.00691318)
-bones/48/position = Vector3(-0.453507, 1.09318, -0.595651)
-bones/49/position = Vector3(-0.511002, 0.772781, 0.0667379)
-bones/49/rotation = Quaternion(-0.776043, 0.0329331, 0.629784, -0.00670877)
+bones/0/position = Vector3(0, 0.00134258, 0)
+bones/1/position = Vector3(0, 0.377021, 0)
+bones/1/rotation = Quaternion(0.00689343, 0.0402275, -0.000277535, 0.999167)
+bones/2/rotation = Quaternion(0.00768832, 0.00532931, -0.000419426, 0.999956)
+bones/3/rotation = Quaternion(0.0028623, 8.75095e-05, 0.000450195, 0.999996)
+bones/4/position = Vector3(0.211657, 0.133309, -0.0032386)
+bones/4/rotation = Quaternion(-0.569745, -0.0704362, -0.640829, 0.509674)
+bones/5/rotation = Quaternion(3.08749e-08, -5.5146e-08, -0.492868, 0.870104)
+bones/7/rotation = Quaternion(-0.295346, -0.340509, 0.117472, 0.884887)
+bones/8/rotation = Quaternion(-0.00231466, 0.00511069, -0.691428, 0.722423)
+bones/14/position = Vector3(-0.210617, 0.132788, -0.00295745)
+bones/14/rotation = Quaternion(-0.627024, 0.0837844, 0.607539, 0.480331)
+bones/15/rotation = Quaternion(1.07259e-08, 6.63708e-08, 0.512005, 0.858982)
+bones/17/rotation = Quaternion(-0.295061, 0.321204, -0.189196, 0.879757)
+bones/18/rotation = Quaternion(0.000361797, 0.00128518, 0.692358, 0.721553)
+bones/21/rotation = Quaternion(-0.00887033, -0.0356705, 0.000136094, 0.999324)
+bones/24/position = Vector3(0.170945, 0.113587, 0.00632886)
+bones/24/rotation = Quaternion(0.987572, 0.0746993, 0.0760797, 0.115469)
+bones/25/rotation = Quaternion(0.385256, 6.24881e-08, -2.66656e-07, 0.92281)
+bones/26/rotation = Quaternion(-0.60876, -0.189621, 0.0654791, 0.767573)
+bones/28/position = Vector3(-0.170945, 0.113587, -0.00632884)
+bones/28/rotation = Quaternion(0.992718, -0.030721, 0.0278494, 0.113103)
+bones/29/rotation = Quaternion(0.439715, -5.97018e-08, 3.05957e-07, 0.898137)
+bones/30/rotation = Quaternion(-0.615953, 0.105113, -0.0211019, 0.780454)
+bones/31/rotation = Quaternion(2.62073e-08, 0.916239, -0.400631, -6.87894e-08)
+bones/32/position = Vector3(0.170945, 0.296416, 0.579918)
+bones/33/position = Vector3(0.200061, 0.0414843, 0.230575)
+bones/33/rotation = Quaternion(-0.715911, -6.9064e-08, -7.17939e-08, 0.698192)
+bones/39/position = Vector3(-0.170945, 0.296416, 0.579918)
+bones/40/position = Vector3(-0.170945, 0.031414, 0.202734)
+bones/40/rotation = Quaternion(-0.663682, -7.48679e-08, -6.59808e-08, 0.748015)
+bones/47/position = Vector3(0.520321, 0.76976, -0.0433722)
+bones/47/rotation = Quaternion(0.80863, 0.034586, 0.587263, 0.00667566)
+bones/49/position = Vector3(-0.511002, 0.76976, 0.066031)
+bones/49/rotation = Quaternion(-0.775451, 0.0321696, 0.630555, -0.00643122)
 
 [node name="Knight_Helmet" parent="Knight/Rig/Skeleton3D" index="0"]
-transform = Transform3D(0.99968, 0.00306273, 0.0251331, -0.00262917, 0.999847, -0.0172655, -0.0251821, 0.0171939, 0.999535, 0.00152132, 1.18231, 0.0225983)
+transform = Transform3D(0.9998, 0.00162948, 0.0199339, -0.00128833, 0.999853, -0.0171146, -0.0199589, 0.0170855, 0.999655, 0.00217125, 1.18825, 0.0224258)
 
 [node name="Knight_Helmet" parent="Knight/Rig/Skeleton3D/Knight_Helmet" index="0"]
 transform = Transform3D(0.999991, -0.00178858, -0.00394341, 0.00178987, 0.999998, 0.000324276, 0.00394281, -0.000331325, 0.999992, 0.000897497, -0.00840551, -0.000263214)
 
 [node name="Knight_Cape" parent="Knight/Rig/Skeleton3D" index="1"]
-transform = Transform3D(0.997346, 0.00275957, 0.0727638, -0.000208223, 0.999386, -0.0350477, -0.0728158, 0.0349395, 0.996733, 0.00152858, 1.18232, 0.0221452)
+transform = Transform3D(0.995835, 0.00288707, 0.0911272, 0.000295892, 0.999391, -0.034896, -0.0911724, 0.0347776, 0.995228, 0.00213865, 1.18826, 0.021974)
 
 [node name="SpotLight3D" parent="Knight/Rig/Skeleton3D" index="3"]
-transform = Transform3D(0.999887, -0.0150267, 1.74732e-07, -0.0150241, -0.99971, 0.0188485, -0.000283056, -0.0188464, -0.999822, -0.548723, 0.415589, 0.740334)
+transform = Transform3D(0.999887, -0.0150268, 1.76289e-07, -0.0150241, -0.99971, 0.0188485, -0.000283056, -0.0188464, -0.999822, -0.548723, 0.00336683, 0.140194)
 light_color = Color(1, 1, 0.403922, 1)
 light_energy = 8.657
 light_indirect_energy = 0.0
@@ -1416,7 +1405,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -9)
 curve = SubResource("Curve3D_54iks")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="FlatPath3D3"]
-transform = Transform3D(-0.89148, 0.428282, -0.147706, 0.451667, 0.814953, -0.363097, -0.0351344, -0.390417, -0.919956, 37.5878, -4.43394, -4.9943)
+transform = Transform3D(-0.89148, 0.428282, -0.147706, 0.451667, 0.814953, -0.363097, -0.0351345, -0.390417, -0.919956, 37.5878, -4.43394, -4.9943)
 progress = 53.8136
 script = ExtResource("2_bx5mx")
 
@@ -1428,7 +1417,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -9)
 curve = SubResource("Curve3D_j27g6")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="FlatPath3D8"]
-transform = Transform3D(-0.999987, 0, -8.74216e-08, 0, 1, 0, 8.74216e-08, 0, -0.999987, 54.5719, 0, 7.81847)
+transform = Transform3D(-0.999987, 0, 1.50994e-07, 0, 1, 0, -1.50994e-07, 0, -0.999987, 54.5719, 0, 7.81847)
 progress = 53.8136
 script = ExtResource("2_bx5mx")
 
@@ -1464,7 +1453,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -9)
 curve = SubResource("Curve3D_f8smm")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="FlatPath3D6"]
-transform = Transform3D(-0.995959, 0, 0.0896626, 0, 1, 0, -0.0896626, 0, -0.995959, 8.0745, 0, 2.78565)
+transform = Transform3D(-0.995959, 0, 0.0896666, 0, 1, 0, -0.0896666, 0, -0.995959, 8.0745, 0, 2.78562)
 progress = 53.8136
 script = ExtResource("2_bx5mx")
 
@@ -1476,7 +1465,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -9)
 curve = SubResource("Curve3D_6m2iy")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="FlatPath3D9"]
-transform = Transform3D(0.202611, 0, -0.979247, 0, 1, 0, 0.979247, 0, 0.202611, -18.861, 0, 16.7526)
+transform = Transform3D(0.202604, 0, -0.979248, 0, 1, 0, 0.979248, 0, 0.202604, -18.8611, 0, 16.7526)
 progress = 53.8136
 script = ExtResource("2_bx5mx")
 

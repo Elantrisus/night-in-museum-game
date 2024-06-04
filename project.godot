@@ -67,4 +67,5 @@ shift={
 
 [rendering]
 
+textures/vram_compression/import_s3tc_bptc=true
 occlusion_culling/use_occlusion_culling=true

@@ -27,7 +27,6 @@ func time_convert(time_in_sec):
 
 func initialize_icons(count):
 	for i in range(count):
-		print(i)
 		var new_texture = TextureRect.new()
 		new_texture.texture = load("res://assets/vase/vase-bw.png") # Load the black and white icon texture
 		new_texture.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED

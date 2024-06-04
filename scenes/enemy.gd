@@ -24,7 +24,6 @@ func lost_sight():
 		detection.exited_sight()
 
 func caught_sight(collider):
-	print(collider.name)
 	
 	if collider.has_method("entered_view") and collider.has_method("left_view") and player_body == null:
 		$VisionRayCast.debug_shape_custom_color = Color(174,0,0)

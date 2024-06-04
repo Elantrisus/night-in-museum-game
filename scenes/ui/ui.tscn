@@ -57,7 +57,7 @@ size_flags_horizontal = 8
 size_flags_vertical = 8
 
 [node name="StaminaBar" type="ProgressBar" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(200, 40)
+custom_minimum_size = Vector2(400, 80)
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 1

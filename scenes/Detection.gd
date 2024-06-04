@@ -15,12 +15,9 @@ var timer_value = 0
 var distance = 0
 
 func entered_sight():
-	print("Entered sight")
 	is_seen = true
-	#timer.start()
 
 func exited_sight():
-	print("Exited sight")
 	is_seen = false
 
 # Called when the node enters the scene tree for the first time.
@@ -52,7 +49,6 @@ func _process(delta):
 
 	# Check if game over condition is met
 	if timer_value >= game_over_threshold:
-		print("game over treshold reached")
 		detection_timeout.emit()
 
 
