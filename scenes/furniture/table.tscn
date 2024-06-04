@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://yulyfuv8r0qd"]
+
+[ext_resource type="PackedScene" uid="uid://doxa7imrmxis3" path="res://assets/models/props/furnature/stool.glb" id="1_iinbu"]
+[ext_resource type="PackedScene" uid="uid://cs4jw2dbqjloj" path="res://assets/models/props/furnature/table.glb" id="2_362bv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_liw5c"]
+
+[node name="table" type="StaticBody3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="stool2" parent="." instance=ExtResource("1_iinbu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7, 0, 0.6)
+
+[node name="stool5" parent="." instance=ExtResource("1_iinbu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7, 0, -0.4)
+
+[node name="stool4" parent="." instance=ExtResource("1_iinbu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 0, 0.6)
+
+[node name="table2" parent="." instance=ExtResource("2_362bv")]
+
+[node name="stool3" parent="." instance=ExtResource("1_iinbu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 0, -0.4)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.7, 0, 0, 0, 0.7, 0, 0, 0, 1.98, 0, 0.4, 0)
+shape = SubResource("BoxShape3D_liw5c")

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dolq2ixs0nepy"]
+
+[ext_resource type="PackedScene" uid="uid://cqqai80nk8tgm" path="res://assets/models/props/furnature/closet_large.glb" id="1_efpqy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7akem"]
+
+[node name="closet" type="StaticBody3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="closet_large2" parent="." instance=ExtResource("1_efpqy")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1.8, 0, 0, 0, 0.6, 0, 1, 0)
+shape = SubResource("BoxShape3D_7akem")

@@ -3,7 +3,7 @@ class_name Ui
 
 @onready var detection_timer = %DetectionTimer
 @onready var icon_container = $MarginContainer/GridContainer2/HBoxContainer
-@onready var stamina_bar = $StaminaBar
+@onready var stamina_bar = $MarginContainer/VBoxContainer/StaminaBar
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
