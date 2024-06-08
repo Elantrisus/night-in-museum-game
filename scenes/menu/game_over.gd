@@ -2,7 +2,7 @@ extends Control
 
 @onready var start_button = $MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/start_button
 
-@onready var start_level = preload("res://scenes/level.tscn")
+@onready var start_level = preload("res://scenes/menu/level_chose.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
